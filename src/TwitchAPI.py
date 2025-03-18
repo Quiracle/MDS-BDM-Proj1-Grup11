@@ -3,6 +3,10 @@ import time
 import os
 from dotenv import load_dotenv
 from collections import defaultdict
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load environment variables
 load_dotenv()
@@ -19,7 +23,7 @@ def get_access_token():
     }
     response = requests.post(url, params=params)
     response.raise_for_status()
-    print("ACCESS TOKEN AQUIRED!")
+    logging.info("ACCESS TOKEN AQUIRED!")
     return response.json()['access_token']
 
 # Get all active streams with pagination
@@ -40,8 +44,8 @@ def get_all_streams(access_token):
         response.raise_for_status()
         data = response.json()
         all_streams.extend(data['data'])
-        print(data["pagination"])
-        if 'pagination' in data and 'cursor' in data['pagination'] and i < 30:
+        logging.info(f"Reading page {i} of streamers, size: {params['first']}")
+        if 'pagination' in data and 'cursor' in data['pagination'] and i < 3:
             params['after'] = data['pagination']['cursor']
             i+=1
         else:
@@ -58,7 +62,6 @@ def aggregate_viewers_by_game(streams):
         game_id = stream['game_id']
         viewer_count = stream['viewer_count']
         game_viewers[game_id] += viewer_count
-        print(viewer_count)
     return game_viewers
 
 # Get game names for the collected game IDs
@@ -91,4 +94,4 @@ if __name__ == '__main__':
     results.sort(key=lambda x: x[1], reverse=True)  # Sort by viewers descending
     
     for game, viewers in results:
-        print(f'{game}: {viewers} viewers')
+        logging.info(f'{game}: {viewers} viewers')
