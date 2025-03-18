@@ -1,0 +1,4362 @@
+[
+    {
+        "AppID": 2414710,
+        "Name": "Bee-Man",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "7 Jun, 2023"
+    },
+    {
+        "AppID": 2456130,
+        "Name": "Demon's Bane",
+        "Price": "1.19 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "3 Aug, 2023"
+    },
+    {
+        "AppID": 1652520,
+        "Name": "Dungeon Tactics",
+        "Price": "9.75 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "24 Apr, 2022"
+    },
+    {
+        "AppID": 860880,
+        "Name": "Castle: Jigsaw Puzzles",
+        "Price": "0.55 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "23 May, 2018"
+    },
+    {
+        "AppID": 1491580,
+        "Name": "M.E.A.T. Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "9 Dec, 2021"
+    },
+    {
+        "AppID": 2013680,
+        "Name": "Kaz's Adventure",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "5 Sep, 2022"
+    },
+    {
+        "AppID": 587420,
+        "Name": "Cart Racer",
+        "Price": "0.49 EUR",
+        "Players Online": 2,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "5 Jun, 2017"
+    },
+    {
+        "AppID": 2010000,
+        "Name": "Nock",
+        "Price": "19.5 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "13 Jul, 2023"
+    },
+    {
+        "AppID": 1121810,
+        "Name": "Electronic Super Joy 2 - Gold Edition",
+        "Price": "10.79 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "9 Aug, 2019"
+    },
+    {
+        "AppID": 2140410,
+        "Name": "Target React Force",
+        "Price": "10.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "18 Nov, 2022"
+    },
+    {
+        "AppID": 1431380,
+        "Name": "Mage World - The Wizard's Stone",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "28 Oct, 2020"
+    },
+    {
+        "AppID": 2062920,
+        "Name": "TTV4",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "7 Jul, 2022"
+    },
+    {
+        "AppID": 614530,
+        "Name": "Garden Tale",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "13 Sep, 2017"
+    },
+    {
+        "AppID": 2854090,
+        "Name": "Roxy Raccoon's Pinball Panic - Tabletop Terror",
+        "Price": "0.64 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "19 Apr, 2024"
+    },
+    {
+        "AppID": 1155280,
+        "Name": "Deck of Ashes - Skin pack",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "20 Sep, 2019"
+    },
+    {
+        "AppID": 1567570,
+        "Name": "Wilbur's Quest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1360313,
+        "Name": "TIGER GAME ASSETS LOGOTYPE VOL.22",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, n, i, m, a, t, i, o, n,  , &,  , M, o, d, e, l, i, n, g",
+        "Release Date": "1 Jul, 2020"
+    },
+    {
+        "AppID": 2191910,
+        "Name": "Angel Legion-DLC Allurement(Black)",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "21 Oct, 2022"
+    },
+    {
+        "AppID": 1975890,
+        "Name": "Alone",
+        "Price": "7.64 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "22 Jul, 2022"
+    },
+    {
+        "AppID": 3372210,
+        "Name": "LIGHTNING RETURNS:FINAL FANTASY XIII Original Soundtrack PLUS",
+        "Price": "10.17 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "22 Jan, 2025"
+    },
+    {
+        "AppID": 490250,
+        "Name": "Locomancer",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "28 Feb, 2017"
+    },
+    {
+        "AppID": 3509790,
+        "Name": "I commissioned some snails 2",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "28 Mar, 2025"
+    },
+    {
+        "AppID": 1893200,
+        "Name": "Travelers in Space Crack",
+        "Price": "1.55 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "13 Mar, 2022"
+    },
+    {
+        "AppID": 3420240,
+        "Name": "Near-Death-Expedition Soundtrack",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "21 Feb, 2025"
+    },
+    {
+        "AppID": 1263560,
+        "Name": "PC Building Simulator Soundtrack",
+        "Price": "2.67 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "11 Feb, 2021"
+    },
+    {
+        "AppID": 1913780,
+        "Name": "PI.EXE",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "7 Mar, 2022"
+    },
+    {
+        "AppID": 1527490,
+        "Name": "Fantasy Grounds - FG Underwater",
+        "Price": "4.91 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "9 Feb, 2021"
+    },
+    {
+        "AppID": 463860,
+        "Name": "Shadows of Kurgansk",
+        "Price": "2.39 EUR",
+        "Players Online": 1,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "15 Dec, 2016"
+    },
+    {
+        "AppID": 3319050,
+        "Name": "Perino Candy Buster",
+        "Price": "3.41 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "7 Dec, 2024"
+    },
+    {
+        "AppID": 3350820,
+        "Name": "The Crossroads",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "17 Dec, 2024"
+    },
+    {
+        "AppID": 342510,
+        "Name": "Bret Airborne",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "29 Jan, 2015"
+    },
+    {
+        "AppID": 1590080,
+        "Name": "Color Souls",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "18 Jun, 2021"
+    },
+    {
+        "AppID": 1872570,
+        "Name": "STAY - Supporter Pack",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "26 Feb, 2022"
+    },
+    {
+        "AppID": 282530,
+        "Name": "Castlevania: Lords of Shadow – Mirror of Fate HD",
+        "Price": "1.79 EUR",
+        "Players Online": 12,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "27 Mar, 2014"
+    },
+    {
+        "AppID": 246720,
+        "Name": "Wayward Manor",
+        "Price": "6.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "15 Jul, 2014"
+    },
+    {
+        "AppID": 965620,
+        "Name": "Wings of Glory",
+        "Price": "6.24 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "21 Jul, 2022"
+    },
+    {
+        "AppID": 1431620,
+        "Name": "Cybercube battle",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "16 Oct, 2020"
+    },
+    {
+        "AppID": 969070,
+        "Name": "World of Guns: XIX Century Pack #1",
+        "Price": "8.19 EUR",
+        "Players Online": 0,
+        "Genres": "F, r, e, e,  , T, o,  , P, l, a, y",
+        "Release Date": "23 Oct, 2018"
+    },
+    {
+        "AppID": 3299770,
+        "Name": "Burning Squad Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "31 Jan, 2025"
+    },
+    {
+        "AppID": 203345,
+        "Name": "Jagged Alliance: Back in Action - Point Blank DLC",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "13 Jun, 2012"
+    },
+    {
+        "AppID": 2439740,
+        "Name": "Wolf West",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "21 Sep, 2023"
+    },
+    {
+        "AppID": 1964990,
+        "Name": "Galactic Explorers",
+        "Price": "1.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "29 Apr, 2022"
+    },
+    {
+        "AppID": 2794930,
+        "Name": "Fantasy Grounds - Devin Night Pack 203: Elemental Undead",
+        "Price": "4.41 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "5 Mar, 2024"
+    },
+    {
+        "AppID": 851530,
+        "Name": "Mini-Dead",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "4 May, 2018"
+    },
+    {
+        "AppID": 1710590,
+        "Name": "Overheat",
+        "Price": "1.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "16 Aug, 2021"
+    },
+    {
+        "AppID": 2819250,
+        "Name": "Hot And Lovely ：Suger - adult patch",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "29 Mar, 2024"
+    },
+    {
+        "AppID": 2714350,
+        "Name": "Fairy Carrots Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "15 Dec, 2023"
+    },
+    {
+        "AppID": 2023050,
+        "Name": "Lighthouse Keeper",
+        "Price": "1.99 EUR",
+        "Players Online": 1,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "23 Aug, 2022"
+    },
+    {
+        "AppID": 1172700,
+        "Name": "The Occupation: Deluxe Edition Upgrade",
+        "Price": "9.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "15 Nov, 2019"
+    },
+    {
+        "AppID": 65254,
+        "Name": "Train Simulator: E18 Loco Add-On",
+        "Price": "6.49 EUR",
+        "Players Online": 0,
+        "Genres": "S, i, m, u, l, a, t, i, o, n",
+        "Release Date": "12 Apr, 2012"
+    },
+    {
+        "AppID": 3578590,
+        "Name": "这个游戏",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2293900,
+        "Name": "ASURA",
+        "Price": "0.0 N/A",
+        "Players Online": 9,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "18 Jul, 2023"
+    },
+    {
+        "AppID": 294160,
+        "Name": "Galcon 2",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "F, r, e, e,  , T, o,  , P, l, a, y",
+        "Release Date": "5 Dec, 2014"
+    },
+    {
+        "AppID": 2961950,
+        "Name": "Warhammer 40,000: Warpforge - Sororitas starter bundle",
+        "Price": "29.99 EUR",
+        "Players Online": 0,
+        "Genres": "S, t, r, a, t, e, g, y",
+        "Release Date": "23 May, 2024"
+    },
+    {
+        "AppID": 2063800,
+        "Name": "Dungems",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "S, t, r, a, t, e, g, y",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 513420,
+        "Name": "VR Escape the space station",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "24 Aug, 2016"
+    },
+    {
+        "AppID": 565180,
+        "Name": "Dogurai",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "27 May, 2019"
+    },
+    {
+        "AppID": 327173,
+        "Name": "LEGO Batman 3: Beyond Gotham DLC: Batman of the Future Character Pack",
+        "Price": "0.89 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "17 Dec, 2014"
+    },
+    {
+        "AppID": 3384490,
+        "Name": "Stella Gladio",
+        "Price": "5.45 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "20 Dec, 2024"
+    },
+    {
+        "AppID": 443460,
+        "Name": "Star Sky 2",
+        "Price": "0.69 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "2 Mar, 2016"
+    },
+    {
+        "AppID": 777670,
+        "Name": "Okinawa Rush",
+        "Price": "8.77 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "21 Oct, 2021"
+    },
+    {
+        "AppID": 2951930,
+        "Name": "Навь Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "25 Apr, 2024"
+    },
+    {
+        "AppID": 1394330,
+        "Name": "乱世奇谋Stratagem in troubled times",
+        "Price": "8.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "23 Nov, 2020"
+    },
+    {
+        "AppID": 2050520,
+        "Name": "无间",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 3041620,
+        "Name": "Cellyon: Boss Maker",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "26 Jun, 2024"
+    },
+    {
+        "AppID": 3330930,
+        "Name": "Locked in my Darkness 2: The Room",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1975050,
+        "Name": "Critias Empire Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "3 Apr, 2024"
+    },
+    {
+        "AppID": 2814940,
+        "Name": "Incline",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "2025"
+    },
+    {
+        "AppID": 3164540,
+        "Name": "Sweep Maidens Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "18 Aug, 2024"
+    },
+    {
+        "AppID": 1333980,
+        "Name": "Flyist",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "18 Jun, 2021"
+    },
+    {
+        "AppID": 2521530,
+        "Name": "Damocles Gaze",
+        "Price": "4.19 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "1 Sep, 2023"
+    },
+    {
+        "AppID": 3373940,
+        "Name": "Locomotive 115 Soundtrack",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "28 Nov, 2024"
+    },
+    {
+        "AppID": 2728080,
+        "Name": "Two Souls",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "18 Jun, 2024"
+    },
+    {
+        "AppID": 1717270,
+        "Name": "Arkanoid - Eternal Battle",
+        "Price": "2.69 CAD",
+        "Players Online": 2,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "27 Oct, 2022"
+    },
+    {
+        "AppID": 1570270,
+        "Name": "Fall Balance Ball Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "10 Mar, 2021"
+    },
+    {
+        "AppID": 1930300,
+        "Name": "Dinner With Strangers",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1637830,
+        "Name": "Eden Gamma",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2884240,
+        "Name": "Hive Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "28 Mar, 2024"
+    },
+    {
+        "AppID": 2485520,
+        "Name": "Hammer of Pain Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "8 Sep, 2023"
+    },
+    {
+        "AppID": 1932810,
+        "Name": "Deicider",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 713650,
+        "Name": "Sevgilim Olur musun ?",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "25 Sep, 2017"
+    },
+    {
+        "AppID": 2010400,
+        "Name": "Hell Green Blue",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "25 Jun, 2022"
+    },
+    {
+        "AppID": 2288440,
+        "Name": "The Black Grimoire: Cursebreaker Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "5 Feb, 2023"
+    },
+    {
+        "AppID": 2932900,
+        "Name": "Acre Crisis",
+        "Price": "3.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "17 Jul, 2024"
+    },
+    {
+        "AppID": 1527990,
+        "Name": "Gatewalkers Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "3 Feb, 2021"
+    },
+    {
+        "AppID": 770820,
+        "Name": "Factory Hiro",
+        "Price": "2.39 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "24 Jan, 2018"
+    },
+    {
+        "AppID": 1022467,
+        "Name": "DFF NT: Vaan Starter Pack",
+        "Price": "5.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "12 Mar, 2019"
+    },
+    {
+        "AppID": 1829940,
+        "Name": "Downfall of Krynto",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "26 Jan, 2022"
+    },
+    {
+        "AppID": 3450440,
+        "Name": "Perimbó Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "23 Feb, 2025"
+    },
+    {
+        "AppID": 1947542,
+        "Name": "Trainz Plus DLC - Orient Express Trainset",
+        "Price": "5.24 EUR",
+        "Players Online": 0,
+        "Genres": "S, i, m, u, l, a, t, i, o, n",
+        "Release Date": "31 May, 2022"
+    },
+    {
+        "AppID": 846290,
+        "Name": "Wheelchair Simulator VR Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "7 May, 2018"
+    },
+    {
+        "AppID": 2492930,
+        "Name": "Maze of Fear",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1348930,
+        "Name": "Rockjack",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "19 Nov, 2020"
+    },
+    {
+        "AppID": 1740260,
+        "Name": "Gizmos: Interstellar Voyage Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "28 Aug, 2021"
+    },
+    {
+        "AppID": 1581770,
+        "Name": "SpellForce: Conquest of Eo",
+        "Price": "11.99 EUR",
+        "Players Online": 148,
+        "Genres": "R, P, G",
+        "Release Date": "3 Feb, 2023"
+    },
+    {
+        "AppID": 1991740,
+        "Name": "天地归虚 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "13 Jun, 2022"
+    },
+    {
+        "AppID": 1329160,
+        "Name": "Fantasy Grounds - Jans Tokenpack 12 - Farm Animals",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "26 May, 2020"
+    },
+    {
+        "AppID": 1607190,
+        "Name": "Mona",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2492040,
+        "Name": "FATAL FURY: City of the Wolves",
+        "Price": "59.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "24 Apr, 2025"
+    },
+    {
+        "AppID": 268101,
+        "Name": "Call of Duty: Ghosts - Wolf Skin",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "14 Jan, 2014"
+    },
+    {
+        "AppID": 1675826,
+        "Name": "Tiger Tank 59 Ⅰ Air Strike MP097",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "28 Jun, 2021"
+    },
+    {
+        "AppID": 953728,
+        "Name": "Master Car Creation in Blender: 3.09 - Flag Logo Shader",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "15 Nov, 2018"
+    },
+    {
+        "AppID": 3423070,
+        "Name": "酆都战记 Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "3 Jan, 2025"
+    },
+    {
+        "AppID": 982201,
+        "Name": "The Battle of Polytopia - Elyrion Tribe",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "4 Aug, 2020"
+    },
+    {
+        "AppID": 650330,
+        "Name": "Sanator: Scarlet Scarf",
+        "Price": "1.63 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "6 Jun, 2019"
+    },
+    {
+        "AppID": 2728330,
+        "Name": "HZ_SERVER",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "6 Mar, 2024"
+    },
+    {
+        "AppID": 214933,
+        "Name": "BioShock Infinite - Season Pass",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "26 Mar, 2013"
+    },
+    {
+        "AppID": 839110,
+        "Name": "Re Angel - Original Sound Track",
+        "Price": "6.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "25 Apr, 2018"
+    },
+    {
+        "AppID": 312350,
+        "Name": "Commander : The Great War",
+        "Price": "11.59 EUR",
+        "Players Online": 5,
+        "Genres": "S, t, r, a, t, e, g, y",
+        "Release Date": "25 Jul, 2014"
+    },
+    {
+        "AppID": 3233060,
+        "Name": "Lost Zone: Survival",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 3139040,
+        "Name": "Just Another Platformer Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "7 Sep, 2024"
+    },
+    {
+        "AppID": 71340,
+        "Name": "Sonic Generations",
+        "Price": "0.0 N/A",
+        "Players Online": 37,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "3 Nov, 2011"
+    },
+    {
+        "AppID": 1825000,
+        "Name": "Terra Puzzle 3D",
+        "Price": "2.39 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "7 May, 2022"
+    },
+    {
+        "AppID": 1687838,
+        "Name": "Tiger Tank 59 Ⅰ Break The Fog MP039",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "7 Jul, 2021"
+    },
+    {
+        "AppID": 1930570,
+        "Name": "DarkSpar Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "8 Mar, 2022"
+    },
+    {
+        "AppID": 2307430,
+        "Name": "GHOST: AC-130 CLOSE AIR SUPPORT",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "23 Feb, 2023"
+    },
+    {
+        "AppID": 3385120,
+        "Name": "The Dragons's Path",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 3042220,
+        "Name": "Astroneer: Glitchwalkers",
+        "Price": "9.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "13 Nov, 2024"
+    },
+    {
+        "AppID": 2438260,
+        "Name": "Tiny Kingdom",
+        "Price": "8.63 EUR",
+        "Players Online": 13,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "30 Jan, 2025"
+    },
+    {
+        "AppID": 436700,
+        "Name": "Retaliation: Enemy Mine Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "S, t, r, a, t, e, g, y",
+        "Release Date": "20 Jan, 2016"
+    },
+    {
+        "AppID": 2103190,
+        "Name": "Reilla ~Sweets Adventure~",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "3 Oct, 2022"
+    },
+    {
+        "AppID": 436608,
+        "Name": "Rocksmith 2014 - Crobot - Nowhere to Hide",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "26 Apr, 2016"
+    },
+    {
+        "AppID": 924370,
+        "Name": "Kontrakt",
+        "Price": "1.47 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "22 Oct, 2018"
+    },
+    {
+        "AppID": 3136220,
+        "Name": "GIRLS VS TENTACLES",
+        "Price": "0.67 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "20 Sep, 2024"
+    },
+    {
+        "AppID": 2962630,
+        "Name": "Survive It: Frozen - All Characters Pack",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "26 May, 2024"
+    },
+    {
+        "AppID": 3209430,
+        "Name": "Akaku Forest Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "16 Sep, 2024"
+    },
+    {
+        "AppID": 1499940,
+        "Name": "My Low Poly City",
+        "Price": "3.29 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "11 Jan, 2021"
+    },
+    {
+        "AppID": 1883230,
+        "Name": "Clive vs Hives 2",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "8 Feb, 2022"
+    },
+    {
+        "AppID": 2852330,
+        "Name": "Lost Lands: Stories of the First Brotherhood Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "28 Mar, 2024"
+    },
+    {
+        "AppID": 589600,
+        "Name": "DYE: Original Soundtrack",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "23 Feb, 2017"
+    },
+    {
+        "AppID": 1824590,
+        "Name": "Furry Shakespeare: Two Incredibly Ripped, Absolutely Shredded Noble Kinsmen",
+        "Price": "7.8 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "7 Apr, 2022"
+    },
+    {
+        "AppID": 3453400,
+        "Name": "Machinery 3",
+        "Price": "9.75 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "4 Mar, 2025"
+    },
+    {
+        "AppID": 3361790,
+        "Name": "AquaCo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 3448380,
+        "Name": "Keep It Running: Together",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "2025"
+    },
+    {
+        "AppID": 2810010,
+        "Name": "Foster The Monster",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 1871810,
+        "Name": "Otome No Himitsu",
+        "Price": "0.55 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "28 Jan, 2022"
+    },
+    {
+        "AppID": 2390890,
+        "Name": "New Stars Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "29 Nov, 2024"
+    },
+    {
+        "AppID": 1934660,
+        "Name": "Super Trunko Go",
+        "Price": "1.75 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "22 Feb, 2023"
+    },
+    {
+        "AppID": 430100,
+        "Name": "darkcase : the basement",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "5 Jun, 2018"
+    },
+    {
+        "AppID": 3198770,
+        "Name": "Gravepact Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "13 Oct, 2024"
+    },
+    {
+        "AppID": 1978260,
+        "Name": "SPEARHEAD - FREE PAPER PACK",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "29 Apr, 2022"
+    },
+    {
+        "AppID": 2113350,
+        "Name": "Scholomatch",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "2025"
+    },
+    {
+        "AppID": 2288660,
+        "Name": "Furry Reich 🐺",
+        "Price": "0.79 EUR",
+        "Players Online": 2,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "19 Apr, 2023"
+    },
+    {
+        "AppID": 1873944,
+        "Name": "I've Seen Everything - Flowers",
+        "Price": "0.59 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "28 Jan, 2022"
+    },
+    {
+        "AppID": 613260,
+        "Name": "Agents of Mayhem - Safeword Agent Pack",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "S, e, x, u, a, l,  , C, o, n, t, e, n, t",
+        "Release Date": "14 Nov, 2017"
+    },
+    {
+        "AppID": 1916860,
+        "Name": "『絵話 -kaiwa-』",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "7 Jun, 2022"
+    },
+    {
+        "AppID": 3193540,
+        "Name": "Diamond Board",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "6 Jan, 2025"
+    },
+    {
+        "AppID": 504970,
+        "Name": "DreamBreak — Special Edition",
+        "Price": "0.69 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "21 Jul, 2016"
+    },
+    {
+        "AppID": 966520,
+        "Name": "Groove Coaster - Konohazuku",
+        "Price": "1.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "24 Dec, 2018"
+    },
+    {
+        "AppID": 819650,
+        "Name": "Bitcoin",
+        "Price": "0.55 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "12 Nov, 2018"
+    },
+    {
+        "AppID": 301600,
+        "Name": "Blade Symphony Soundtrack",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "21 Jul, 2014"
+    },
+    {
+        "AppID": 986760,
+        "Name": "Paradise Checkers",
+        "Price": "19.5 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "3 Jan, 2019"
+    },
+    {
+        "AppID": 2808150,
+        "Name": "Race Against a Duck: Duck Deluxe",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 1587860,
+        "Name": "Let's Ride! Silver Buckle Stables",
+        "Price": "2.39 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "28 Jan, 2022"
+    },
+    {
+        "AppID": 3008430,
+        "Name": "Hidden Square Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "31 May, 2024"
+    },
+    {
+        "AppID": 2720240,
+        "Name": "Blagmoz Soundtrack",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "27 Feb, 2024"
+    },
+    {
+        "AppID": 1927500,
+        "Name": "Glöd",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "16 Oct, 2025"
+    },
+    {
+        "AppID": 1972790,
+        "Name": "GunQuest Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "19 Apr, 2022"
+    },
+    {
+        "AppID": 619400,
+        "Name": "Fluffy Creatures VS The World",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "9 Apr, 2017"
+    },
+    {
+        "AppID": 3574700,
+        "Name": "Strange Waveforms",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 1623781,
+        "Name": "Speedpunk - Greeble city",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "2 Aug, 2021"
+    },
+    {
+        "AppID": 1841530,
+        "Name": "The Divide",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 826420,
+        "Name": "Dark Romance: Heart of the Beast Collector's Edition",
+        "Price": "3.27 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "6 Apr, 2018"
+    },
+    {
+        "AppID": 3016440,
+        "Name": "ダンジョン人狼　スペシャルスタンプ　チャン",
+        "Price": "5.89 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "11 Jul, 2024"
+    },
+    {
+        "AppID": 575580,
+        "Name": "Queen of Seas",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "2 Feb, 2017"
+    },
+    {
+        "AppID": 2471650,
+        "Name": "Sassy Girl",
+        "Price": "7.8 EUR",
+        "Players Online": 1,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "5 Jan, 2025"
+    },
+    {
+        "AppID": 1057450,
+        "Name": "Gradually Forward",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "F, r, e, e,  , T, o,  , P, l, a, y",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 1928680,
+        "Name": "Anti-Bully Adventure",
+        "Price": "1.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "28 Feb, 2023"
+    },
+    {
+        "AppID": 3146840,
+        "Name": "Digital Influence",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "10 Sep, 2024"
+    },
+    {
+        "AppID": 1413680,
+        "Name": "DANGER! Escape Lab",
+        "Price": "1.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "15 Dec, 2020"
+    },
+    {
+        "AppID": 2429500,
+        "Name": "이세계메이드 / 외전소설",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "10 Jun, 2023"
+    },
+    {
+        "AppID": 2166360,
+        "Name": "OVERKILL",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1466510,
+        "Name": "Humans Took my Neighbors Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "3 May, 2022"
+    },
+    {
+        "AppID": 375900,
+        "Name": "Trackmania Turbo",
+        "Price": "15.99 EUR",
+        "Players Online": 17,
+        "Genres": "M, a, s, s, i, v, e, l, y,  , M, u, l, t, i, p, l, a, y, e, r",
+        "Release Date": "24 Mar, 2016"
+    },
+    {
+        "AppID": 1961860,
+        "Name": "- Doki Doki Family - 特異体質者のドキドキ家族生活",
+        "Price": "15.9 EUR",
+        "Players Online": 0,
+        "Genres": "S, i, m, u, l, a, t, i, o, n",
+        "Release Date": "25 May, 2022"
+    },
+    {
+        "AppID": 618770,
+        "Name": "RPG Maker VX Ace - Aztec Character Pack",
+        "Price": "4.13 EUR",
+        "Players Online": 0,
+        "Genres": "D, e, s, i, g, n,  , &,  , I, l, l, u, s, t, r, a, t, i, o, n",
+        "Release Date": "17 Apr, 2017"
+    },
+    {
+        "AppID": 338130,
+        "Name": "Strategy & Tactics: Wargame Collection",
+        "Price": "1.99 EUR",
+        "Players Online": 5,
+        "Genres": "S, t, r, a, t, e, g, y",
+        "Release Date": "22 Apr, 2016"
+    },
+    {
+        "AppID": 2499420,
+        "Name": "Broken Hearts Island",
+        "Price": "0.59 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "8 Sep, 2023"
+    },
+    {
+        "AppID": 605280,
+        "Name": "The Legend of Heroes: Trails of Cold Steel - Alisa's Casuals",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "2 Aug, 2017"
+    },
+    {
+        "AppID": 1626060,
+        "Name": "Nauticalypse",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "27 Mar, 2023"
+    },
+    {
+        "AppID": 2062370,
+        "Name": "Insurgency: Sandstorm - Damascus Weapon Skin Set",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "17 Nov, 2022"
+    },
+    {
+        "AppID": 1829587,
+        "Name": "HITMAN 3 - Seven Deadly Sins Collection",
+        "Price": "4.4 USD",
+        "Players Online": 0,
+        "Genres": "Э, к, ш, е, н, ы",
+        "Release Date": "26 янв. 2023 г."
+    },
+    {
+        "AppID": 3230860,
+        "Name": "Kitty Loves Birds",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "2025"
+    },
+    {
+        "AppID": 2794990,
+        "Name": "Fluida",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2050770,
+        "Name": "Void Rush",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 3048810,
+        "Name": "Eden Genesis: Piano Collection",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "6 Aug, 2024"
+    },
+    {
+        "AppID": 3042910,
+        "Name": "Paint By Numbers - 8-Bit World Ep. 9",
+        "Price": "1.03 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "17 Jun, 2024"
+    },
+    {
+        "AppID": 2026270,
+        "Name": "Super Virus Defense",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "26 May, 2023"
+    },
+    {
+        "AppID": 2733960,
+        "Name": "100 Asian Cats - Donation M",
+        "Price": "2.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "17 Dec, 2023"
+    },
+    {
+        "AppID": 1418231,
+        "Name": "Steel Division 2 - Burning Baltics",
+        "Price": "4.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "29 Apr, 2021"
+    },
+    {
+        "AppID": 942230,
+        "Name": "Coloring Pixels - Flag Pack",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "17 May, 2019"
+    },
+    {
+        "AppID": 305440,
+        "Name": "Heroes Rise: The Hero Project Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "17 Jun, 2014"
+    },
+    {
+        "AppID": 1446910,
+        "Name": "The Tower Of TigerQiuQiu Guardian",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "13 Oct, 2020"
+    },
+    {
+        "AppID": 1425150,
+        "Name": "Until Last Breath Soundtrack",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "6 Nov, 2020"
+    },
+    {
+        "AppID": 473420,
+        "Name": "She Wants Me Dead - Track DLC",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "12 May, 2016"
+    },
+    {
+        "AppID": 1241284,
+        "Name": "Monster Hunter World: Iceborne - Pendant: Moly Pendant - Protection",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "11 Mar, 2020"
+    },
+    {
+        "AppID": 631960,
+        "Name": "WindSoul",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2795860,
+        "Name": "Looking For Cats In a Badly Drawn Forest",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "8 Feb, 2024"
+    },
+    {
+        "AppID": 1006120,
+        "Name": "Tetsumo Party",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "26 Jul, 2019"
+    },
+    {
+        "AppID": 3503230,
+        "Name": "COZY DESKTOP KONBINI",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "April 2025"
+    },
+    {
+        "AppID": 862914,
+        "Name": "Find & Destroy - Rare Set \"Sturmgeschütz\"",
+        "Price": "41.99 EUR",
+        "Players Online": 0,
+        "Genres": "F, r, e, e,  , T, o,  , P, l, a, y",
+        "Release Date": "12 Jun, 2018"
+    },
+    {
+        "AppID": 2873440,
+        "Name": "Chrono Odyssey",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 2236460,
+        "Name": "Kyōtabi",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1939780,
+        "Name": "Pirates Odyssey",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 3310410,
+        "Name": "Dominated By: Sadistic Sensei",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "3 Jan, 2025"
+    },
+    {
+        "AppID": 2725020,
+        "Name": "Viking Heroes 5",
+        "Price": "2.06 EUR",
+        "Players Online": 2,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "19 Jan, 2024"
+    },
+    {
+        "AppID": 3273080,
+        "Name": "Turbo Live Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "7 Oct, 2024"
+    },
+    {
+        "AppID": 294350,
+        "Name": "Vitrum Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "22 Apr, 2014"
+    },
+    {
+        "AppID": 1276100,
+        "Name": "Clay Game",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "2 Jul, 2020"
+    },
+    {
+        "AppID": 2184500,
+        "Name": "BQM - BlockQuest Maker Remastered Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "23 Mar, 2023"
+    },
+    {
+        "AppID": 666570,
+        "Name": "Infectonator 3: Apocalypse",
+        "Price": "3.79 AUD",
+        "Players Online": 18,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "10 May, 2018"
+    },
+    {
+        "AppID": 337070,
+        "Name": "Dimmdrive :: Gaming Ramdrive @ 10,000+ MB/s",
+        "Price": "14.99 EUR",
+        "Players Online": 6,
+        "Genres": "U, t, i, l, i, t, i, e, s",
+        "Release Date": "1 Jan, 2015"
+    },
+    {
+        "AppID": 2780380,
+        "Name": "搾精錬金工房イリス～錬金術師と勇者と竜騎士と女神さまのえっちな冒険～",
+        "Price": "8.27 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "20 Feb, 2024"
+    },
+    {
+        "AppID": 1333360,
+        "Name": "Jerez's Arena",
+        "Price": "7.8 EUR",
+        "Players Online": 6,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "17 Jul, 2020"
+    },
+    {
+        "AppID": 3249060,
+        "Name": "Tombstone Tally",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "15 Oct, 2024"
+    },
+    {
+        "AppID": 1624400,
+        "Name": "Visual Novel Maker - JRPG and Fantasy Music Vol 3",
+        "Price": "9.75 EUR",
+        "Players Online": 0,
+        "Genres": "W, e, b,  , P, u, b, l, i, s, h, i, n, g",
+        "Release Date": "6 May, 2021"
+    },
+    {
+        "AppID": 3005260,
+        "Name": "Squares of Hell",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "14 Jun, 2024"
+    },
+    {
+        "AppID": 3348540,
+        "Name": "The Rise of the Hero",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "9 Jan, 2025"
+    },
+    {
+        "AppID": 1659270,
+        "Name": "Sprite Sequence Chapter 2",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "14 Oct, 2021"
+    },
+    {
+        "AppID": 2945510,
+        "Name": "Punch Max",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "31 May, 2024"
+    },
+    {
+        "AppID": 60340,
+        "Name": "LUXOR: 5th Passage ",
+        "Price": "2.96 EUR",
+        "Players Online": 2,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "25 Jan, 2011"
+    },
+    {
+        "AppID": 1704009,
+        "Name": "Tiger Fighter 1931 Tora! MP050",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "1 Sep, 2021"
+    },
+    {
+        "AppID": 1910070,
+        "Name": "Love Season - Winter",
+        "Price": "3.39 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "17 Feb, 2022"
+    },
+    {
+        "AppID": 3250500,
+        "Name": "Night Project - Chapter 3",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "27 Sep, 2024"
+    },
+    {
+        "AppID": 1832240,
+        "Name": "The Feathered Serpent",
+        "Price": "19.5 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "11 Jun, 2024"
+    },
+    {
+        "AppID": 804790,
+        "Name": "Tomato Jones - Episode 3 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "14 Feb, 2018"
+    },
+    {
+        "AppID": 1555470,
+        "Name": "Zombie Blender",
+        "Price": "2.49 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "23 Dec, 2021"
+    },
+    {
+        "AppID": 2822110,
+        "Name": "Planet Prospector",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 3343880,
+        "Name": "RenewEd3D",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "16 Dec, 2024"
+    },
+    {
+        "AppID": 2797030,
+        "Name": "Wonder Zoo Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "8 Feb, 2024"
+    },
+    {
+        "AppID": 360099,
+        "Name": "Fantasy Grounds - D&D Rogue Class Pack",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "7 Apr, 2015"
+    },
+    {
+        "AppID": 628440,
+        "Name": "Multiplayer FPS Tutorial Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Jul, 2017"
+    },
+    {
+        "AppID": 1217640,
+        "Name": "God's Challenge",
+        "Price": "1.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "13 Jan, 2020"
+    },
+    {
+        "AppID": 790710,
+        "Name": "World of Warplanes",
+        "Price": "0.0 N/A",
+        "Players Online": 116,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "10 Feb, 2022"
+    },
+    {
+        "AppID": 1705520,
+        "Name": "My Furry Neighbour",
+        "Price": "0.49 EUR",
+        "Players Online": 1,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "27 Aug, 2021"
+    },
+    {
+        "AppID": 3049770,
+        "Name": "Animal Kingdom 3",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "Q1 2025"
+    },
+    {
+        "AppID": 3091340,
+        "Name": "Metal Thunder",
+        "Price": "8.09 EUR",
+        "Players Online": 20,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "1 Nov, 2024"
+    },
+    {
+        "AppID": 1279410,
+        "Name": "GUNBIRD 2",
+        "Price": "8.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "10 Jun, 2020"
+    },
+    {
+        "AppID": 2337270,
+        "Name": "Aboriginal",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2206380,
+        "Name": "Candy Tycoon",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 3009440,
+        "Name": "Pinball Hero",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Q4 2025"
+    },
+    {
+        "AppID": 2216980,
+        "Name": "リフトピア　もうひとのせ！",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "29 Nov, 2022"
+    },
+    {
+        "AppID": 2270510,
+        "Name": "Tennis the Menace Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "6 Jan, 2023"
+    },
+    {
+        "AppID": 941958,
+        "Name": "Devil May Cry 5 - Pasta Breaker",
+        "Price": "0.64 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "7 Mar, 2019"
+    },
+    {
+        "AppID": 1229320,
+        "Name": "The Witcher 3: Wild Hunt Soundtrack",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "10 Feb, 2020"
+    },
+    {
+        "AppID": 2926300,
+        "Name": "Sales employee Takeru-Kun",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "30 Apr, 2024"
+    },
+    {
+        "AppID": 1342883,
+        "Name": "No Turning Back: Class Unlock Pack 5",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "24 Jun, 2020"
+    },
+    {
+        "AppID": 1597400,
+        "Name": "LOST EGG 2: Be together",
+        "Price": "2.39 EUR",
+        "Players Online": 13,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "29 Apr, 2021"
+    },
+    {
+        "AppID": 3200200,
+        "Name": "Puzzle Checkers: The Rooks",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "17 Sep, 2024"
+    },
+    {
+        "AppID": 2398880,
+        "Name": "The Mask Game",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "29 Feb, 2024"
+    },
+    {
+        "AppID": 3320880,
+        "Name": "Creepy Claus",
+        "Price": "2.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "13 Dec, 2024"
+    },
+    {
+        "AppID": 1441710,
+        "Name": "Atelier Ryza 2: \"Nostalgic Straw Hat\" Accessory for Ryza",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "25 Jan, 2021"
+    },
+    {
+        "AppID": 1625440,
+        "Name": "Don't Byte Your Tongue",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "7 Apr, 2023"
+    },
+    {
+        "AppID": 1520690,
+        "Name": "Die Rangliste",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "15 Jun, 2021"
+    },
+    {
+        "AppID": 1514280,
+        "Name": "轻点江湖水",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 450510,
+        "Name": "Masquerade: The Baubles of Doom Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "12 May, 2016"
+    },
+    {
+        "AppID": 787580,
+        "Name": "VR 10 Pin Bowling",
+        "Price": "8.99 EUR",
+        "Players Online": 0,
+        "Genres": "S, i, m, u, l, a, t, i, o, n",
+        "Release Date": "28 May, 2021"
+    },
+    {
+        "AppID": 3285450,
+        "Name": "Towers & Goblins: The Last Stand Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "14 Oct, 2024"
+    },
+    {
+        "AppID": 2411390,
+        "Name": "Top Villain: Total Domination",
+        "Price": "3.88 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "17 Aug, 2023"
+    },
+    {
+        "AppID": 2887170,
+        "Name": "ナンプレ Classic - Soundtrack",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "9 Jun, 2024"
+    },
+    {
+        "AppID": 858940,
+        "Name": "Flowers -Le volume sur ete-",
+        "Price": "10.07 EUR",
+        "Players Online": 9,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "26 Jul, 2018"
+    },
+    {
+        "AppID": 2351844,
+        "Name": "Pinball FX - Godzilla vs. Kong Pinball Pack",
+        "Price": "4.43 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "13 Apr, 2023"
+    },
+    {
+        "AppID": 1381920,
+        "Name": "Pixel Ripped 1995 - A Funky Pixel Ripped Tribute",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "24 Aug, 2020"
+    },
+    {
+        "AppID": 2998090,
+        "Name": "RPG Maker MZ - MEGA FANTASY Walking Monsters and Faces",
+        "Price": "15.74 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "5 Jun, 2024"
+    },
+    {
+        "AppID": 974870,
+        "Name": "FIREWORK",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Dec, 2018"
+    },
+    {
+        "AppID": 2890730,
+        "Name": "Gummy Jump 2",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "11 Jan, 2025"
+    },
+    {
+        "AppID": 720620,
+        "Name": "TaleSpire",
+        "Price": "18.74 USD",
+        "Players Online": 81,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "Apr 14, 2021"
+    },
+    {
+        "AppID": 2185610,
+        "Name": "RPG Maker MZ - KR Halloween Party Tileset",
+        "Price": "3.49 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "27 Oct, 2022"
+    },
+    {
+        "AppID": 2936060,
+        "Name": "电码无声",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "6 Jun, 2024"
+    },
+    {
+        "AppID": 3134550,
+        "Name": "Kaf village",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "16 Aug, 2024"
+    },
+    {
+        "AppID": 431180,
+        "Name": "WolfQuest: Classic",
+        "Price": "19.5 EUR",
+        "Players Online": 6,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "25 Mar, 2016"
+    },
+    {
+        "AppID": 1742910,
+        "Name": "The Forest Prison",
+        "Price": "12.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "4 Jun, 2022"
+    },
+    {
+        "AppID": 504490,
+        "Name": "The God's Chain",
+        "Price": "0.49 EUR",
+        "Players Online": 29,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "14 Aug, 2016"
+    },
+    {
+        "AppID": 1768930,
+        "Name": "Splatter Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "11 Oct, 2021"
+    },
+    {
+        "AppID": 3314090,
+        "Name": "エネルギークラッシュ",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Jan, 2025"
+    },
+    {
+        "AppID": 2194760,
+        "Name": "Don't Remember",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "20 Dec, 2022"
+    },
+    {
+        "AppID": 1515480,
+        "Name": "Synth Riders - Muse - \"Algorithm (Alternate Reality Version)\"",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "14 Jan, 2021"
+    },
+    {
+        "AppID": 604500,
+        "Name": "Tank Force: Online Shooter Game",
+        "Price": "0.0 N/A",
+        "Players Online": 317,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "23 Oct, 2017"
+    },
+    {
+        "AppID": 343820,
+        "Name": "Deja Vu: MacVenture Series",
+        "Price": "1.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "26 Jan, 2015"
+    },
+    {
+        "AppID": 1646180,
+        "Name": "Succubus Runa and the Erotic Dungeon",
+        "Price": "3.27 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "5 Nov, 2021"
+    },
+    {
+        "AppID": 3123160,
+        "Name": "Angel Legion-DLC Chain Trace (Blue)",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "29 Jul, 2024"
+    },
+    {
+        "AppID": 1295070,
+        "Name": "Minions of Elden",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2983210,
+        "Name": "Uncle Kenny The Game Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "9 May, 2024"
+    },
+    {
+        "AppID": 907900,
+        "Name": "Mystic Ruins",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "21 Jul, 2018"
+    },
+    {
+        "AppID": 396250,
+        "Name": "VERSUS: The Lost Ones - WorningBird Hints",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "21 Aug, 2015"
+    },
+    {
+        "AppID": 1374650,
+        "Name": "Furry Woof and Nya - Artbook 18+",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "18 Jul, 2020"
+    },
+    {
+        "AppID": 1394410,
+        "Name": "Mysterica",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "9 Oct, 2020"
+    },
+    {
+        "AppID": 3141480,
+        "Name": "Immortals Revenge",
+        "Price": "0.0 N/A",
+        "Players Online": 12,
+        "Genres": "M, a, s, s, i, v, e, l, y,  , M, u, l, t, i, p, l, a, y, e, r",
+        "Release Date": "8 Sep, 2024"
+    },
+    {
+        "AppID": 3545010,
+        "Name": "Factory Planner Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "23 Feb, 2025"
+    },
+    {
+        "AppID": 1656310,
+        "Name": "TETRAGUN",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "5 May, 2023"
+    },
+    {
+        "AppID": 1113870,
+        "Name": "Time Travelling Blues",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1394270,
+        "Name": "SCP: Escape Together",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Jan, 2021"
+    },
+    {
+        "AppID": 3347790,
+        "Name": "Dustland Delivery Soundtrack",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "19 Dec, 2024"
+    },
+    {
+        "AppID": 693700,
+        "Name": "Prime Mover",
+        "Price": "12.49 EUR",
+        "Players Online": 1,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "21 May, 2018"
+    },
+    {
+        "AppID": 807980,
+        "Name": "ElvenEscape",
+        "Price": "8.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "22 Sep, 2022"
+    },
+    {
+        "AppID": 1453650,
+        "Name": "Paper Dolls 2 逃出生天",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "29 Oct, 2020"
+    },
+    {
+        "AppID": 842750,
+        "Name": "Galaxy Champions TV",
+        "Price": "6.89 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Sep, 2018"
+    },
+    {
+        "AppID": 675500,
+        "Name": "ACT IT OUT XL!",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "6 Mar, 2018"
+    },
+    {
+        "AppID": 918390,
+        "Name": "Choice of Magics Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "10 Aug, 2018"
+    },
+    {
+        "AppID": 629940,
+        "Name": "STRAFE Official Soundtrack",
+        "Price": "1.72 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "9 May, 2017"
+    },
+    {
+        "AppID": 3429260,
+        "Name": "Food Croupier",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2456650,
+        "Name": "阿西娅：回到梦境",
+        "Price": "0.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "2 Aug, 2023"
+    },
+    {
+        "AppID": 2260030,
+        "Name": "Delirium",
+        "Price": "6.49 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "2 Feb, 2023"
+    },
+    {
+        "AppID": 1544950,
+        "Name": "Glass Masquerade 2: Illusions - Lunar Year Puzzle",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "11 Feb, 2021"
+    },
+    {
+        "AppID": 3046600,
+        "Name": "Onimusha 2: Samurai's Destiny",
+        "Price": "29.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "22 May, 2025"
+    },
+    {
+        "AppID": 1922634,
+        "Name": "Marvel's Midnight Suns - Blood Storm",
+        "Price": "5.99 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "11 May, 2023"
+    },
+    {
+        "AppID": 2531630,
+        "Name": "RPG Maker MV - KR Legendary Palaces - Medusa Tileset",
+        "Price": "6.82 EUR",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "10 Aug, 2023"
+    },
+    {
+        "AppID": 3348060,
+        "Name": "Demon Knives Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "14 Nov, 2024"
+    },
+    {
+        "AppID": 1751000,
+        "Name": "Astro Colony Beta",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "14 Dec, 2021"
+    },
+    {
+        "AppID": 1804370,
+        "Name": "Airball",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "22 Nov, 2021"
+    },
+    {
+        "AppID": 669730,
+        "Name": "Mind Trap",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "18 Jun, 2018"
+    },
+    {
+        "AppID": 1640830,
+        "Name": "The Terrible Persistence of Memory",
+        "Price": "1.59 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "15 Jun, 2021"
+    },
+    {
+        "AppID": 865210,
+        "Name": "Business tour. Great Leaders: King",
+        "Price": "1.37 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "28 May, 2018"
+    },
+    {
+        "AppID": 819170,
+        "Name": "The Unknown City (Horror Begins Now.....Episode 1) Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "V, i, o, l, e, n, t",
+        "Release Date": "6 Jul, 2018"
+    },
+    {
+        "AppID": 974260,
+        "Name": "Cuboid Keeper Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Nov, 2018"
+    },
+    {
+        "AppID": 2802150,
+        "Name": "猫神牧场 Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "7 Sep, 2024"
+    },
+    {
+        "AppID": 3247160,
+        "Name": "Relics Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "22 Oct, 2024"
+    },
+    {
+        "AppID": 450860,
+        "Name": "Andarilho",
+        "Price": "0.49 EUR",
+        "Players Online": 3,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "12 Nov, 2020"
+    },
+    {
+        "AppID": 892550,
+        "Name": "Beauty and the Beast",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "7 Aug, 2018"
+    },
+    {
+        "AppID": 715240,
+        "Name": "Claws & Feathers 3",
+        "Price": "1.99 EUR",
+        "Players Online": 1,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "3 Dec, 2020"
+    },
+    {
+        "AppID": 1593020,
+        "Name": "Milk inside a bag of milk inside a bag of milk Soundtrack",
+        "Price": "0.63 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "16 Apr, 2021"
+    },
+    {
+        "AppID": 948820,
+        "Name": "Nevergrind",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 1569380,
+        "Name": "Triple Dungeon",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "22 Mar, 2021"
+    },
+    {
+        "AppID": 729390,
+        "Name": "Debris Infinity",
+        "Price": "3.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "8 Dec, 2017"
+    },
+    {
+        "AppID": 3255420,
+        "Name": "Stella in Lewd Dream Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "1 Nov, 2024"
+    },
+    {
+        "AppID": 3474520,
+        "Name": "All Abug!",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "28 Feb, 2025"
+    },
+    {
+        "AppID": 1663910,
+        "Name": "Tiny Gods Of The Nile",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "29 Nov, 2021"
+    },
+    {
+        "AppID": 3311820,
+        "Name": "Wild Woods - Supporter Pack",
+        "Price": "8.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "9 Dec, 2024"
+    },
+    {
+        "AppID": 2196840,
+        "Name": "Impromptu Trip",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 778150,
+        "Name": "Crossroad",
+        "Price": "8.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "14 Feb, 2018"
+    },
+    {
+        "AppID": 2328290,
+        "Name": "Hentai Oni",
+        "Price": "0.59 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "16 Mar, 2023"
+    },
+    {
+        "AppID": 2462380,
+        "Name": "SkyDribble",
+        "Price": "2.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "22 Jun, 2023"
+    },
+    {
+        "AppID": 3213960,
+        "Name": "Space Thugs",
+        "Price": "0.89 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "4 Feb, 2025"
+    },
+    {
+        "AppID": 2895560,
+        "Name": "Harlot's Diary",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "23 Aug, 2024"
+    },
+    {
+        "AppID": 846610,
+        "Name": "The Chosen",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "V, i, o, l, e, n, t",
+        "Release Date": "14 May, 2018"
+    },
+    {
+        "AppID": 1600260,
+        "Name": "Kawaii Girls",
+        "Price": "0.49 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "13 Aug, 2021"
+    },
+    {
+        "AppID": 611400,
+        "Name": "Planet Coaster - The Munsters® Munster Koach Construction Kit",
+        "Price": "1.49 EUR",
+        "Players Online": 0,
+        "Genres": "S, i, m, u, l, a, t, i, o, n",
+        "Release Date": "21 Jul, 2017"
+    },
+    {
+        "AppID": 918180,
+        "Name": "Test your knowledge: Cats",
+        "Price": "0.67 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "27 Aug, 2018"
+    },
+    {
+        "AppID": 922581,
+        "Name": "My Brother Rabbit - Artbook",
+        "Price": "0.59 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "24 Sep, 2018"
+    },
+    {
+        "AppID": 2205090,
+        "Name": "Bridge Engineer",
+        "Price": "12.79 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "2 Dec, 2022"
+    },
+    {
+        "AppID": 475130,
+        "Name": "How To Survive 2 - Combat Knives",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "7 Sep, 2016"
+    },
+    {
+        "AppID": 884101,
+        "Name": "Omni Edition Upgrade",
+        "Price": "24.64 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "20 Apr, 2022"
+    },
+    {
+        "AppID": 1002490,
+        "Name": "Roulette Simulator 2",
+        "Price": "0.59 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "31 Dec, 2018"
+    },
+    {
+        "AppID": 1876030,
+        "Name": "Dark Past",
+        "Price": "2.49 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "25 Oct, 2022"
+    },
+    {
+        "AppID": 524210,
+        "Name": "NIGHTSTAR Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "1 Sep, 2016"
+    },
+    {
+        "AppID": 2914240,
+        "Name": "The Shroomlings Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "15 Nov, 2024"
+    },
+    {
+        "AppID": 1870610,
+        "Name": "The Cuberooms",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 553960,
+        "Name": "Husk",
+        "Price": "1.43 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "3 Feb, 2017"
+    },
+    {
+        "AppID": 2116350,
+        "Name": "Build-a-lot Big Dreams",
+        "Price": "7.8 EUR",
+        "Players Online": 2,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "23 Nov, 2024"
+    },
+    {
+        "AppID": 1936790,
+        "Name": "О! 这个美丽的新 \"红色 \"世界!",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2425410,
+        "Name": "Alia's Carnival! Flowering Sky",
+        "Price": "15.65 EUR",
+        "Players Online": 2,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "21 Jun, 2023"
+    },
+    {
+        "AppID": 1619320,
+        "Name": "Phoenix Point - Expansion Pass",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "R, P, G",
+        "Release Date": "20 May, 2021"
+    },
+    {
+        "AppID": 1412281,
+        "Name": "The Tower Of TigerQiuQiu Ninja Tiger:QiuQiu",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "1 Sep, 2020"
+    },
+    {
+        "AppID": 2245300,
+        "Name": "Bellhop",
+        "Price": "1.37 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "15 May, 2024"
+    },
+    {
+        "AppID": 2004500,
+        "Name": "Multishot",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 519009,
+        "Name": "Kikoriki: What the wind will bring",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "22 Sep, 2016"
+    },
+    {
+        "AppID": 229250,
+        "Name": "Painkiller Hell & Damnation -  Full Metal Rocket",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "26 Apr, 2013"
+    },
+    {
+        "AppID": 2381320,
+        "Name": "Artificial Wings",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "To be announced"
+    },
+    {
+        "AppID": 2242660,
+        "Name": "Small Bird Forest",
+        "Price": "1.99 EUR",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "27 Dec, 2022"
+    },
+    {
+        "AppID": 2131460,
+        "Name": "Talon's Blade",
+        "Price": "15.79 EUR",
+        "Players Online": 0,
+        "Genres": "A, d, v, e, n, t, u, r, e",
+        "Release Date": "1 Aug, 2024"
+    },
+    {
+        "AppID": 1082810,
+        "Name": "探灵笔记·古墓地宫系列：小红-探墓小队服饰",
+        "Price": "5.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "6 Jun, 2019"
+    },
+    {
+        "AppID": 2432340,
+        "Name": "Toads of the Bayou Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "21 Jun, 2023"
+    },
+    {
+        "AppID": 2675880,
+        "Name": "Tin Hearts (AA-Side)",
+        "Price": "1.19 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "17 Nov, 2023"
+    },
+    {
+        "AppID": 3461300,
+        "Name": "I'm Truely a Good Guy!",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "C, a, s, u, a, l",
+        "Release Date": "1 Apr, 2025"
+    },
+    {
+        "AppID": 2807060,
+        "Name": "Warface: Clutch — Engineer Starter Pack",
+        "Price": "4.99 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "5 Mar, 2024"
+    },
+    {
+        "AppID": 594120,
+        "Name": "Fort Awesome",
+        "Price": "6.89 EUR",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "4 Apr, 2017"
+    },
+    {
+        "AppID": 3256580,
+        "Name": "Royal Romances: Fortunes and Foes Collector's Edition Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "12 Nov, 2024"
+    },
+    {
+        "AppID": 3036140,
+        "Name": "Pawn Shop Simulator: Prologue",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "Coming soon"
+    },
+    {
+        "AppID": 2772840,
+        "Name": "Vespera_Hotel 原声带&设定图",
+        "Price": "0.99 EUR",
+        "Players Online": 0,
+        "Genres": "N/A",
+        "Release Date": "2 Apr, 2024"
+    },
+    {
+        "AppID": 50620,
+        "Name": "Darksiders",
+        "Price": "0.0 N/A",
+        "Players Online": 19,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "23 Sep, 2010"
+    },
+    {
+        "AppID": 1274220,
+        "Name": "WizardChess Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 0,
+        "Genres": "I, n, d, i, e",
+        "Release Date": "31 Mar, 2020"
+    },
+    {
+        "AppID": 1680187,
+        "Name": "Tiger Tank 59 Ⅰ Battleship MP098",
+        "Price": "0.74 EUR",
+        "Players Online": 0,
+        "Genres": "A, c, t, i, o, n",
+        "Release Date": "1 Jul, 2021"
+    },
+    {
+        "AppID": 730,
+        "Name": "Counter-Strike 2",
+        "Price": "0.0 N/A",
+        "Players Online": 1634492,
+        "Genres": "Action, Free To Play",
+        "Release Date": "21 Aug, 2012"
+    },
+    {
+        "AppID": 578080,
+        "Name": "PUBG: BATTLEGROUNDS",
+        "Price": "0.0 N/A",
+        "Players Online": 821534,
+        "Genres": "Action, Adventure, Massively Multiplayer, Free To Play",
+        "Release Date": "21 Dec, 2017"
+    },
+    {
+        "AppID": 2246340,
+        "Name": "Monster Hunter Wilds",
+        "Price": "69.99 EUR",
+        "Players Online": 475054,
+        "Genres": "Action, Adventure, RPG",
+        "Release Date": "27 Feb, 2025"
+    },
+    {
+        "AppID": 1203220,
+        "Name": "NARAKA: BLADEPOINT",
+        "Price": "0.0 N/A",
+        "Players Online": 183380,
+        "Genres": "Action, Adventure, Massively Multiplayer",
+        "Release Date": "11 Aug, 2021"
+    },
+    {
+        "AppID": 2001120,
+        "Name": "Split Fiction",
+        "Price": "49.99 EUR",
+        "Players Online": 147068,
+        "Genres": "Action, Adventure",
+        "Release Date": "6 Mar, 2025"
+    },
+    {
+        "AppID": 1172470,
+        "Name": "Apex Legends™",
+        "Price": "0.0 N/A",
+        "Players Online": 128756,
+        "Genres": "Action, Adventure, Free To Play",
+        "Release Date": "4 Nov, 2020"
+    },
+    {
+        "AppID": 3240220,
+        "Name": "Grand Theft Auto V Enhanced",
+        "Price": "14.99 EUR",
+        "Players Online": 137556,
+        "Genres": "Action, Adventure, Racing",
+        "Release Date": "4 Mar, 2025"
+    },
+    {
+        "AppID": 431960,
+        "Name": "Wallpaper Engine",
+        "Price": "3.99 EUR",
+        "Players Online": 120092,
+        "Genres": "Casual, Indie, Animation & Modeling, Design & Illustration, Photo Editing, Utilities",
+        "Release Date": "16 Nov, 2018"
+    },
+    {
+        "AppID": 413150,
+        "Name": "Stardew Valley",
+        "Price": "8.39 EUR",
+        "Players Online": 120888,
+        "Genres": "Indie, RPG, Simulation",
+        "Release Date": "26 Feb, 2016"
+    },
+    {
+        "AppID": 252490,
+        "Name": "Rust",
+        "Price": "23.99 EUR",
+        "Players Online": 121688,
+        "Genres": "Action, Adventure, Indie, Massively Multiplayer, RPG",
+        "Release Date": "8 Feb, 2018"
+    },
+    {
+        "AppID": 3241660,
+        "Name": "R.E.P.O.",
+        "Price": "9.75 EUR",
+        "Players Online": 108012,
+        "Genres": "Action, Early Access",
+        "Release Date": "26 Feb, 2025"
+    },
+    {
+        "AppID": 271590,
+        "Name": "Grand Theft Auto V Legacy",
+        "Price": "0.0 N/A",
+        "Players Online": 98053,
+        "Genres": "Action, Adventure",
+        "Release Date": "13 Apr, 2015"
+    },
+    {
+        "AppID": 2767030,
+        "Name": "Marvel Rivals",
+        "Price": "0.0 N/A",
+        "Players Online": 95736,
+        "Genres": "Action, Free To Play",
+        "Release Date": "5 Dec, 2024"
+    },
+    {
+        "AppID": 1340990,
+        "Name": "Rise of the Ronin",
+        "Price": "49.99 EUR",
+        "Players Online": 10913,
+        "Genres": "Action, Adventure, RPG",
+        "Release Date": "11 Mar, 2025"
+    },
+    {
+        "AppID": 269210,
+        "Name": "Hero Siege",
+        "Price": "1.55 EUR",
+        "Players Online": 2001,
+        "Genres": "Action, Adventure, Indie, Massively Multiplayer, RPG",
+        "Release Date": "29 Jan, 2014"
+    },
+    {
+        "AppID": 2878960,
+        "Name": "WWE 2K25",
+        "Price": "59.99 EUR",
+        "Players Online": 2941,
+        "Genres": "Simulation, Sports",
+        "Release Date": "13 Mar, 2025"
+    },
+    {
+        "AppID": 3145660,
+        "Name": "Warborne: Above Ashes Playtest",
+        "Price": "0.0 N/A",
+        "Players Online": 3879,
+        "Genres": "N/A",
+        "Release Date": "16 Jan, 2025"
+    },
+    {
+        "AppID": 1449690,
+        "Name": "The Walking Dead: The Telltale Definitive Series",
+        "Price": "4.89 EUR",
+        "Players Online": 6324,
+        "Genres": "Adventure",
+        "Release Date": "29 Oct, 2020"
+    },
+    {
+        "AppID": 3473170,
+        "Name": "Atelier Yumia: The Alchemist of Memories & the Envisioned Land - Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 5531,
+        "Genres": "N/A",
+        "Release Date": "16 Mar, 2025"
+    },
+    {
+        "AppID": 972660,
+        "Name": "Spiritfarer®: Farewell Edition",
+        "Price": "2.89 EUR",
+        "Players Online": 11187,
+        "Genres": "Adventure, Indie, Simulation",
+        "Release Date": "18 Aug, 2020"
+    },
+    {
+        "AppID": 391540,
+        "Name": "Undertale",
+        "Price": "0.99 EUR",
+        "Players Online": 8879,
+        "Genres": "Indie, RPG",
+        "Release Date": "15 Sep, 2015"
+    },
+    {
+        "AppID": 311690,
+        "Name": "Enter the Gungeon",
+        "Price": "1.47 EUR",
+        "Players Online": 5926,
+        "Genres": "Action, Adventure, Indie",
+        "Release Date": "5 Apr, 2016"
+    },
+    {
+        "AppID": 379720,
+        "Name": "DOOM",
+        "Price": "1.99 EUR",
+        "Players Online": 4639,
+        "Genres": "Action",
+        "Release Date": "12 May, 2016"
+    },
+    {
+        "AppID": 3431040,
+        "Name": "That's not my Neighbor",
+        "Price": "1.79 EUR",
+        "Players Online": 1827,
+        "Genres": "Adventure, Casual, Indie, Simulation",
+        "Release Date": "11 Mar, 2025"
+    },
+    {
+        "AppID": 1425250,
+        "Name": "Gravity Field",
+        "Price": "1.49 EUR",
+        "Players Online": 599,
+        "Genres": "Indie",
+        "Release Date": "22 Feb, 2023"
+    },
+    {
+        "AppID": 960910,
+        "Name": "Heavy Rain",
+        "Price": "1.99 EUR",
+        "Players Online": 2068,
+        "Genres": "Action, Adventure",
+        "Release Date": "18 Jun, 2020"
+    },
+    {
+        "AppID": 3537790,
+        "Name": "Where they Go Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "23 Feb, 2025"
+    },
+    {
+        "AppID": 3532440,
+        "Name": "Feral Metaverse Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3529880,
+        "Name": "Humiliation Dungeon Survivors Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 6,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3530090,
+        "Name": "Regeneration Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3529350,
+        "Name": "Medieval Legacy Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "16 Feb, 2025"
+    },
+    {
+        "AppID": 3529360,
+        "Name": "EXONAUTIS Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 9,
+        "Genres": "N/A",
+        "Release Date": "23 Feb, 2025"
+    },
+    {
+        "AppID": 3529120,
+        "Name": "Dice With Death Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "18 Feb, 2025"
+    },
+    {
+        "AppID": 3528250,
+        "Name": "Planet Hoarders Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "19 Feb, 2025"
+    },
+    {
+        "AppID": 3526650,
+        "Name": "Little Library Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "21 Feb, 2025"
+    },
+    {
+        "AppID": 3524630,
+        "Name": "Dark Dominance ~Chain Control~ Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 16,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3522900,
+        "Name": "Cave Path Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "19 Feb, 2025"
+    },
+    {
+        "AppID": 3521550,
+        "Name": "Ostrich Farm Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "16 Feb, 2025"
+    },
+    {
+        "AppID": 3520140,
+        "Name": "Ritual Party Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "14 Feb, 2025"
+    },
+    {
+        "AppID": 3518880,
+        "Name": "Buggos 2 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "19 Feb, 2025"
+    },
+    {
+        "AppID": 3518910,
+        "Name": "GrimmKitchen Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "20 Feb, 2025"
+    },
+    {
+        "AppID": 3518930,
+        "Name": "Zoominoes Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3516680,
+        "Name": "幸运领主：命运的推币机 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "15 Feb, 2025"
+    },
+    {
+        "AppID": 3512220,
+        "Name": "Metal Hunter Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 26,
+        "Genres": "Adventure, Casual, Indie, RPG",
+        "Release Date": "7 Feb, 2025"
+    },
+    {
+        "AppID": 3512560,
+        "Name": "Remote Reaper: FPV Drone Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "12 Feb, 2025"
+    },
+    {
+        "AppID": 3508710,
+        "Name": "the dreamland of lady zombie Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 21,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3508160,
+        "Name": "暗夜游侠 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "8 Feb, 2025"
+    },
+    {
+        "AppID": 3503560,
+        "Name": "My Bimbo Dream Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": "28 Feb, 2025"
+    },
+    {
+        "AppID": 3503600,
+        "Name": "龙之远征 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Action, Adventure, Indie, RPG",
+        "Release Date": "7 Feb, 2025"
+    },
+    {
+        "AppID": 3503000,
+        "Name": "文字遊戯(日本語版) Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Adventure, RPG",
+        "Release Date": "20 Feb, 2025"
+    },
+    {
+        "AppID": 3500730,
+        "Name": "Poly TD Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 5,
+        "Genres": "N/A",
+        "Release Date": "20 Feb, 2025"
+    },
+    {
+        "AppID": 3500360,
+        "Name": "Planet Lust Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "15 Feb, 2025"
+    },
+    {
+        "AppID": 3499730,
+        "Name": "Moadra Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "13 Feb, 2025"
+    },
+    {
+        "AppID": 3497720,
+        "Name": "Dice A Million Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 8,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3492970,
+        "Name": "Nebulock Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "14 Feb, 2025"
+    },
+    {
+        "AppID": 3491320,
+        "Name": "Mechaknights Legends Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "7 Feb, 2025"
+    },
+    {
+        "AppID": 3490200,
+        "Name": "LOVE Hotel Simulator 🏩 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 11,
+        "Genres": "Simulation",
+        "Release Date": "14 Feb, 2025"
+    },
+    {
+        "AppID": 3489180,
+        "Name": "MASSAGE MY EX-BULLY Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 6,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3489190,
+        "Name": "Blood Crawler Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 7,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3488860,
+        "Name": "Dino Topia Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 9,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3487900,
+        "Name": "Star Crafter Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "3 Feb, 2025"
+    },
+    {
+        "AppID": 3487440,
+        "Name": "江城大赢家 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 10,
+        "Genres": "N/A",
+        "Release Date": "21 Feb, 2025"
+    },
+    {
+        "AppID": 3486510,
+        "Name": "Dragon Song Tavern: Cozy & Adventurous Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 7,
+        "Genres": "N/A",
+        "Release Date": "29 Jan, 2025"
+    },
+    {
+        "AppID": 3486800,
+        "Name": "Color Escape 🌈 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "23 Feb, 2025"
+    },
+    {
+        "AppID": 3485600,
+        "Name": "Office Affairs : Executive Decisions Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "14 Feb, 2025"
+    },
+    {
+        "AppID": 3482880,
+        "Name": "Total Chaos Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3480820,
+        "Name": "Red October Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "17 Feb, 2025"
+    },
+    {
+        "AppID": 3479130,
+        "Name": "Sex &amp;amp; Coffee ☕️🤎 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 22,
+        "Genres": "Adventure, Casual, Simulation",
+        "Release Date": "12 Feb, 2025"
+    },
+    {
+        "AppID": 3473600,
+        "Name": "Nice Day for Fishing Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 16,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3468410,
+        "Name": "Piece by Piece Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 7,
+        "Genres": "Casual, Indie, RPG, Simulation, Strategy",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3467980,
+        "Name": "ZombieCards Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "26 Jan, 2025"
+    },
+    {
+        "AppID": 3468010,
+        "Name": "Bloxpath Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Casual, Indie, Strategy",
+        "Release Date": "24 Jan, 2025"
+    },
+    {
+        "AppID": 3468150,
+        "Name": "Hotel Owner Simulator Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "Casual, Indie, Simulation",
+        "Release Date": "16 Feb, 2025"
+    },
+    {
+        "AppID": 3462270,
+        "Name": "BLACKSHARD Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": "12 Feb, 2025"
+    },
+    {
+        "AppID": 3458990,
+        "Name": "Yasuke Simulator Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 6,
+        "Genres": "N/A",
+        "Release Date": "2 Mar, 2025"
+    },
+    {
+        "AppID": 3457180,
+        "Name": "Monster Care Simulator Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 18,
+        "Genres": "N/A",
+        "Release Date": "24 Jan, 2025"
+    },
+    {
+        "AppID": 3457300,
+        "Name": "Guilty as Sock! Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Casual, Simulation",
+        "Release Date": "31 Jan, 2025"
+    },
+    {
+        "AppID": 3456680,
+        "Name": "Margaret’s sin Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "25 Jan, 2025"
+    },
+    {
+        "AppID": 3456750,
+        "Name": "Devil's Terminal Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Adventure, Indie, RPG",
+        "Release Date": "24 Jan, 2025"
+    },
+    {
+        "AppID": 3455310,
+        "Name": "野兽岛 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "13 Feb, 2025"
+    },
+    {
+        "AppID": 3452330,
+        "Name": "凶寓 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 11,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3450070,
+        "Name": "In Your Shoes Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "21 Feb, 2025"
+    },
+    {
+        "AppID": 3450200,
+        "Name": "Death Ring: Second Impact Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": "14 Feb, 2025"
+    },
+    {
+        "AppID": 3450230,
+        "Name": "Starless Abyss Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 8,
+        "Genres": "Indie, Strategy",
+        "Release Date": "20 Feb, 2025"
+    },
+    {
+        "AppID": 3446320,
+        "Name": "摸猫美食街 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Casual, Simulation",
+        "Release Date": "26 Jan, 2025"
+    },
+    {
+        "AppID": 3442120,
+        "Name": "Book Bound Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": "23 Jan, 2025"
+    },
+    {
+        "AppID": 3441070,
+        "Name": "HorrorCore Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Action, Adventure, Casual, Indie, Simulation",
+        "Release Date": "20 Feb, 2025"
+    },
+    {
+        "AppID": 3439270,
+        "Name": "星际建造局 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "9 Jan, 2025"
+    },
+    {
+        "AppID": 3436850,
+        "Name": "All Aboard! The Train Defense Express Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "12 Jan, 2025"
+    },
+    {
+        "AppID": 3434860,
+        "Name": "Airframe Ultra Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "16 Jan, 2025"
+    },
+    {
+        "AppID": 3433710,
+        "Name": "Sex Wish: A Deliciously Naughty Porn VN Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "21 Feb, 2025"
+    },
+    {
+        "AppID": 3430970,
+        "Name": "转生魔塔 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "4 Feb, 2025"
+    },
+    {
+        "AppID": 3430370,
+        "Name": "Gummy Nightmares Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Action, Adventure, Indie",
+        "Release Date": "24 Jan, 2025"
+    },
+    {
+        "AppID": 3429100,
+        "Name": "Restaurant Owner: A Restaurant Simulator Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Casual, Indie, Simulation",
+        "Release Date": "16 Jan, 2025"
+    },
+    {
+        "AppID": 3428230,
+        "Name": "Ginger Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "7 Jan, 2025"
+    },
+    {
+        "AppID": 3421870,
+        "Name": "Thesis of Love Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 6,
+        "Genres": "N/A",
+        "Release Date": "25 Jan, 2025"
+    },
+    {
+        "AppID": 3421020,
+        "Name": "Clutchtime™: Basketball Deckbuilder Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": "23 Jan, 2025"
+    },
+    {
+        "AppID": 3419840,
+        "Name": "Suspense Madman's Dreams Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Adventure, Indie, Simulation",
+        "Release Date": "3 Feb, 2025"
+    },
+    {
+        "AppID": 3417770,
+        "Name": "Realms of Madness Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Simulation, Strategy",
+        "Release Date": "20 Jan, 2025"
+    },
+    {
+        "AppID": 3413960,
+        "Name": "Stoneshard Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 19,
+        "Genres": "N/A",
+        "Release Date": "11 Mar, 2025"
+    },
+    {
+        "AppID": 3413180,
+        "Name": "书恋与君：美少女教我追系花 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "24 Dec, 2024"
+    },
+    {
+        "AppID": 3409850,
+        "Name": "无尽救援 EndlessSalvation Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "5 Feb, 2025"
+    },
+    {
+        "AppID": 3402650,
+        "Name": "Axyn Adventure Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "8 Feb, 2025"
+    },
+    {
+        "AppID": 3380050,
+        "Name": "The Three Kingdoms: The Tales of Jian An Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 15,
+        "Genres": "N/A",
+        "Release Date": "3 Dec, 2024"
+    },
+    {
+        "AppID": 3576160,
+        "Name": "出将入相 Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "8 Mar, 2025"
+    },
+    {
+        "AppID": 3567370,
+        "Name": "Chuck Nolemland: The Starving Kid Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "7 Mar, 2025"
+    },
+    {
+        "AppID": 3553980,
+        "Name": "Fishing The Abyss DEMO",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": "26 Feb, 2025"
+    },
+    {
+        "AppID": 3547680,
+        "Name": "Mythos, Book One Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "6 Mar, 2025"
+    },
+    {
+        "AppID": 3543930,
+        "Name": "There are no Orcs Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 13,
+        "Genres": "N/A",
+        "Release Date": "20 Feb, 2025"
+    },
+    {
+        "AppID": 3541060,
+        "Name": "Qoob Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 3539510,
+        "Name": "Bug Hunters Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "Action, Casual, Indie, Simulation, Strategy",
+        "Release Date": "24 Feb, 2025"
+    },
+    {
+        "AppID": 2701850,
+        "Name": "Space for Sale Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "N/A",
+        "Release Date": "9 Jul, 2024"
+    },
+    {
+        "AppID": 204940,
+        "Name": "Crusader Kings Complete",
+        "Price": "1.99 EUR",
+        "Players Online": 1,
+        "Genres": "Strategy",
+        "Release Date": "14 Feb, 2012"
+    },
+    {
+        "AppID": 204440,
+        "Name": "Pickers",
+        "Price": "3.29 EUR",
+        "Players Online": 1,
+        "Genres": "Adventure, Casual",
+        "Release Date": "22 Feb, 2012"
+    },
+    {
+        "AppID": 203290,
+        "Name": "America's Army: Proving Grounds",
+        "Price": "0.0 N/A",
+        "Players Online": 68,
+        "Genres": "Action, Free To Play",
+        "Release Date": "29 Aug, 2013"
+    },
+    {
+        "AppID": 203510,
+        "Name": "Fortune Summoners: Secret of the Elemental Stone",
+        "Price": "2.99 EUR",
+        "Players Online": 3,
+        "Genres": "Action, Indie, RPG",
+        "Release Date": "30 Jan, 2012"
+    },
+    {
+        "AppID": 203630,
+        "Name": "Warlock - Master of the Arcane",
+        "Price": "5.99 EUR",
+        "Players Online": 35,
+        "Genres": "Strategy",
+        "Release Date": "8 May, 2012"
+    },
+    {
+        "AppID": 202690,
+        "Name": "Hegemony Gold: Wars of Ancient Greece",
+        "Price": "14.99 EUR",
+        "Players Online": 5,
+        "Genres": "Indie, Strategy",
+        "Release Date": "30 Mar, 2012"
+    },
+    {
+        "AppID": 202990,
+        "Name": "Call of Duty: Black Ops II - Multiplayer",
+        "Price": "19.79 EUR",
+        "Players Online": 137,
+        "Genres": "Action",
+        "Release Date": "12 Nov, 2012"
+    },
+    {
+        "AppID": 202130,
+        "Name": "Impire",
+        "Price": "4.99 EUR",
+        "Players Online": 2,
+        "Genres": "Strategy",
+        "Release Date": "14 Feb, 2013"
+    },
+    {
+        "AppID": 202290,
+        "Name": "Sonic Generations Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "17 Jan, 2012"
+    },
+    {
+        "AppID": 202310,
+        "Name": "Ridge Racer™ Unbounded",
+        "Price": "1.99 EUR",
+        "Players Online": 6,
+        "Genres": "Racing",
+        "Release Date": "29 Mar, 2012"
+    },
+    {
+        "AppID": 202351,
+        "Name": "Beta Access to the New Steam Community",
+        "Price": "0.0 N/A",
+        "Players Online": 4,
+        "Genres": "N/A",
+        "Release Date": ""
+    },
+    {
+        "AppID": 201870,
+        "Name": "Assassin's Creed Revelations",
+        "Price": "4.49 EUR",
+        "Players Online": 347,
+        "Genres": "Action, Adventure",
+        "Release Date": "30 Nov, 2011"
+    },
+    {
+        "AppID": 201420,
+        "Name": "Toki Tori 2+",
+        "Price": "0.88 EUR",
+        "Players Online": 1,
+        "Genres": "Adventure, Casual, Indie",
+        "Release Date": "11 Jul, 2013"
+    },
+    {
+        "AppID": 201480,
+        "Name": "Serious Sam: The Random Encounter",
+        "Price": "0.74 EUR",
+        "Players Online": 1,
+        "Genres": "Action, Indie, RPG",
+        "Release Date": "24 Oct, 2011"
+    },
+    {
+        "AppID": 201070,
+        "Name": "Revelations 2012",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "Action, Indie, Strategy",
+        "Release Date": "23 Apr, 2012"
+    },
+    {
+        "AppID": 115320,
+        "Name": "PROTOTYPE 2",
+        "Price": "7.49 EUR",
+        "Players Online": 97,
+        "Genres": "Action, Adventure",
+        "Release Date": "26 Jul, 2012"
+    },
+    {
+        "AppID": 200020,
+        "Name": "Global Ops: Commando Libya",
+        "Price": "0.49 EUR",
+        "Players Online": 20,
+        "Genres": "Action",
+        "Release Date": "26 Oct, 2011"
+    },
+    {
+        "AppID": 200130,
+        "Name": "Puzzler World 2",
+        "Price": "1.49 EUR",
+        "Players Online": 1,
+        "Genres": "Casual, Indie, Strategy",
+        "Release Date": "24 Oct, 2011"
+    },
+    {
+        "AppID": 108700,
+        "Name": "Death Rally",
+        "Price": "2.49 EUR",
+        "Players Online": 1,
+        "Genres": "Action, Racing",
+        "Release Date": "3 Aug, 2012"
+    },
+    {
+        "AppID": 110500,
+        "Name": "Data Jammers: FastForward",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Action, Indie",
+        "Release Date": "24 Oct, 2011"
+    },
+    {
+        "AppID": 104600,
+        "Name": "Portal 2 - The Final Hours",
+        "Price": "0.63 EUR",
+        "Players Online": 3,
+        "Genres": "N/A",
+        "Release Date": "17 May, 2011"
+    },
+    {
+        "AppID": 106000,
+        "Name": "The Cursed Crusade",
+        "Price": "2.99 EUR",
+        "Players Online": 4,
+        "Genres": "Action, Adventure",
+        "Release Date": "14 Oct, 2011"
+    },
+    {
+        "AppID": 107600,
+        "Name": "Waves",
+        "Price": "0.0 N/A",
+        "Players Online": 2,
+        "Genres": "Action, Indie",
+        "Release Date": "16 Nov, 2011"
+    },
+    {
+        "AppID": 102610,
+        "Name": "Orcs Must Die! Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": "3 Oct, 2011"
+    },
+    {
+        "AppID": 100400,
+        "Name": "Silo 2",
+        "Price": "49.99 EUR",
+        "Players Online": 1,
+        "Genres": "Animation & Modeling",
+        "Release Date": "19 Dec, 2012"
+    },
+    {
+        "AppID": 99910,
+        "Name": "Puzzle Pirates",
+        "Price": "0.0 N/A",
+        "Players Online": 112,
+        "Genres": "Adventure, Casual, Free To Play, Massively Multiplayer, Strategy",
+        "Release Date": "31 Aug, 2011"
+    },
+    {
+        "AppID": 98200,
+        "Name": "Frozen Synapse",
+        "Price": "2.29 EUR",
+        "Players Online": 3,
+        "Genres": "Indie, Strategy",
+        "Release Date": "26 May, 2011"
+    },
+    {
+        "AppID": 95700,
+        "Name": "The Cat and the Coup",
+        "Price": "0.0 N/A",
+        "Players Online": 3,
+        "Genres": "Free To Play, Indie",
+        "Release Date": "15 Jun, 2011"
+    },
+    {
+        "AppID": 95900,
+        "Name": "Air Conflicts - Secret Wars",
+        "Price": "5.99 EUR",
+        "Players Online": 3,
+        "Genres": "Action, Simulation",
+        "Release Date": "15 Jul, 2011"
+    },
+    {
+        "AppID": 96100,
+        "Name": "Defy Gravity",
+        "Price": "0.55 EUR",
+        "Players Online": 2,
+        "Genres": "Action, Casual, Indie",
+        "Release Date": "18 Mar, 2016"
+    },
+    {
+        "AppID": 97110,
+        "Name": "Kohan: Immortal Sovereigns",
+        "Price": "9.99 EUR",
+        "Players Online": 1,
+        "Genres": "Strategy",
+        "Release Date": "24 Aug, 2011"
+    },
+    {
+        "AppID": 97120,
+        "Name": "Kohan: Ahriman's Gift",
+        "Price": "9.99 EUR",
+        "Players Online": 2,
+        "Genres": "Strategy",
+        "Release Date": "24 Aug, 2011"
+    },
+    {
+        "AppID": 97130,
+        "Name": "Kohan II: Kings of War",
+        "Price": "9.99 EUR",
+        "Players Online": 6,
+        "Genres": "Strategy",
+        "Release Date": "24 Aug, 2011"
+    },
+    {
+        "AppID": 94530,
+        "Name": "Back to the Future: Ep 5 - OUTATIME",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": ""
+    },
+    {
+        "AppID": 91800,
+        "Name": "Cloning Clyde",
+        "Price": "4.99 EUR",
+        "Players Online": 1,
+        "Genres": "Casual, Indie",
+        "Release Date": "15 Mar, 2011"
+    },
+    {
+        "AppID": 91900,
+        "Name": "Post Apocalyptic Mayhem",
+        "Price": "9.99 EUR",
+        "Players Online": 1,
+        "Genres": "Action, Racing",
+        "Release Date": "17 Mar, 2011"
+    },
+    {
+        "AppID": 92100,
+        "Name": "DETOUR",
+        "Price": "0.99 EUR",
+        "Players Online": 5,
+        "Genres": "Indie, Strategy",
+        "Release Date": "16 May, 2011"
+    },
+    {
+        "AppID": 92200,
+        "Name": "Gundemonium Recollection",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "Action, Indie",
+        "Release Date": "27 Sep, 2011"
+    },
+    {
+        "AppID": 91330,
+        "Name": "Iron Front : Liberation 1944",
+        "Price": "14.99 EUR",
+        "Players Online": 1,
+        "Genres": "Action, Simulation, Strategy",
+        "Release Date": "25 May, 2012"
+    },
+    {
+        "AppID": 73230,
+        "Name": "Majesty Gold HD",
+        "Price": "2.49 EUR",
+        "Players Online": 32,
+        "Genres": "Simulation, Strategy",
+        "Release Date": "4 Sep, 2009"
+    },
+    {
+        "AppID": 80200,
+        "Name": "Fate of the World",
+        "Price": "4.99 EUR",
+        "Players Online": 2,
+        "Genres": "Casual, Indie, Simulation, Strategy",
+        "Release Date": "28 Feb, 2011"
+    },
+    {
+        "AppID": 73020,
+        "Name": "Majesty 2 Collection",
+        "Price": "0.0 N/A",
+        "Players Online": 18,
+        "Genres": "Strategy",
+        "Release Date": "19 Apr, 2011"
+    },
+    {
+        "AppID": 67100,
+        "Name": "Making History II: The War of the World - Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "N/A",
+        "Release Date": ""
+    },
+    {
+        "AppID": 70000,
+        "Name": "Dino D-Day",
+        "Price": "0.99 EUR",
+        "Players Online": 3,
+        "Genres": "Action, Indie",
+        "Release Date": "8 Apr, 2011"
+    },
+    {
+        "AppID": 70100,
+        "Name": "Hacker Evolution",
+        "Price": "0.49 EUR",
+        "Players Online": 2,
+        "Genres": "Simulation",
+        "Release Date": "14 Sep, 2010"
+    },
+    {
+        "AppID": 70110,
+        "Name": "Hacker Evolution - Untold",
+        "Price": "0.49 EUR",
+        "Players Online": 1,
+        "Genres": "Indie, Simulation",
+        "Release Date": "14 Sep, 2010"
+    },
+    {
+        "AppID": 70400,
+        "Name": "Recettear: An Item Shop's Tale",
+        "Price": "2.99 EUR",
+        "Players Online": 35,
+        "Genres": "RPG, Indie",
+        "Release Date": "10 Sep, 2010"
+    },
+    {
+        "AppID": 70410,
+        "Name": "Recettear: An Item Shop's Tale - Demo",
+        "Price": "0.0 N/A",
+        "Players Online": 1,
+        "Genres": "RPG, Indie",
+        "Release Date": "31 Aug, 2010"
+    },
+    {
+        "AppID": 70420,
+        "Name": "Chantelise",
+        "Price": "1.59 EUR",
+        "Players Online": 1,
+        "Genres": "Action, RPG, Indie",
+        "Release Date": "29 Jul, 2011"
+    },
+    {
+        "AppID": 65300,
+        "Name": "Dustforce",
+        "Price": "9.75 EUR",
+        "Players Online": 7,
+        "Genres": "Action, Indie",
+        "Release Date": "17 Jan, 2012"
+    },
+    {
+        "AppID": 65700,
+        "Name": "Arma 2: British Armed Forces",
+        "Price": "1.39 EUR",
+        "Players Online": 2,
+        "Genres": "Action, Simulation, Strategy",
+        "Release Date": "27 Aug, 2010"
+    },
+    {
+        "AppID": 63800,
+        "Name": "Delve Deeper",
+        "Price": "4.49 EUR",
+        "Players Online": 1,
+        "Genres": "Adventure, Indie, RPG, Strategy",
+        "Release Date": "24 Sep, 2010"
+    },
+    {
+        "AppID": 60800,
+        "Name": "Numen: Contest of Heroes",
+        "Price": "1.79 EUR",
+        "Players Online": 1,
+        "Genres": "RPG",
+        "Release Date": "3 Jun, 2010"
+    },
+    {
+        "AppID": 61520,
+        "Name": "Age of Wonders: Shadow Magic",
+        "Price": "2.24 EUR",
+        "Players Online": 19,
+        "Genres": "RPG, Strategy",
+        "Release Date": "12 Oct, 2010"
+    },
+    {
+        "AppID": 63000,
+        "Name": "HOARD",
+        "Price": "1.99 EUR",
+        "Players Online": 2,
+        "Genres": "Action, Casual, Indie, Strategy",
+        "Release Date": "4 Apr, 2011"
+    },
+    {
+        "AppID": 63110,
+        "Name": "Alter Ego",
+        "Price": "9.75 EUR",
+        "Players Online": 1,
+        "Genres": "Adventure",
+        "Release Date": "3 Aug, 2010"
+    },
+    {
+        "AppID": 58550,
+        "Name": "A Game of Thrones - Genesis",
+        "Price": "9.99 EUR",
+        "Players Online": 1,
+        "Genres": "Strategy",
+        "Release Date": "28 Sep, 2011"
+    },
+    {
+        "AppID": 60340,
+        "Name": "LUXOR: 5th Passage ",
+        "Price": "2.96 EUR",
+        "Players Online": 2,
+        "Genres": "Action, Adventure, Casual",
+        "Release Date": "25 Jan, 2011"
+    },
+    {
+        "AppID": 60350,
+        "Name": "Glowfish",
+        "Price": "3.29 EUR",
+        "Players Online": 3,
+        "Genres": "Adventure, Casual, Indie",
+        "Release Date": "30 Sep, 2011"
+    },
+    {
+        "AppID": 57600,
+        "Name": "Tropico 3: Absolute Power",
+        "Price": "1.99 EUR",
+        "Players Online": 9,
+        "Genres": "Simulation, Strategy",
+        "Release Date": "17 May, 2010"
+    },
+    {
+        "AppID": 57730,
+        "Name": "Patrician IV: Rise of a Dynasty",
+        "Price": "2.99 EUR",
+        "Players Online": 80,
+        "Genres": "Strategy",
+        "Release Date": "11 Apr, 2011"
+    }
+]
