@@ -9,7 +9,9 @@ from dateutil.relativedelta import relativedelta
 
 
 def _load_api_key():
-    """Load API key from .env file in parent directory."""
+    """
+    Load API key from .env file in the parent directory.
+    """
     load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
     return os.getenv("YOUTUBE_API_KEY")
 
@@ -60,7 +62,13 @@ def update_views():
     '''
 
     API_KEY = _load_api_key()
-    output_file = "youtube_views.json"
+    
+    # Create path to landing_zone directory
+    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'landing_zone')
+    # Ensure the directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = os.path.join(output_dir, "youtube_views.json")
+    
     existing_data = {}
     
     #Load existing data if JSON file exists
@@ -70,7 +78,8 @@ def update_views():
 
     views = existing_data.copy() #To check the existance of the games 
     
-    with open('games.csv', newline='') as f:
+    games_file = os.path.join(output_dir, 'youtube-games.csv')
+    with open(games_file, newline='') as f:
         reader = csv.reader(f)
         keywords = [row[1] for row in list(reader)[1:] if len(row) > 1]
     
