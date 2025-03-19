@@ -1,0 +1,3 @@
+[submodule "src/src/protondb-community-api"]
+	path = src/src/protondb-community-api
+	url = https://github.com/trsnaqe/protondb-community-api
