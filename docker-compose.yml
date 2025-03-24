@@ -24,18 +24,29 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongo:27017/
       ME_CONFIG_BASICAUTH: false
 
-  proton_mongo:
-    image: mongo:latest
-    container_name: proton_mongo
-    restart: always
-    ports:
-      - "27018:27018"
+  # proton_mongo:
+  #   image: mongo:latest
+  #   container_name: proton_mongo
+  #   restart: always
+  #   ports:
+  #     - "27018:27018"
+  #   environment:
+  #     MONGO_INITDB_DATABASE: protondb
+  #     MONGO_INITDB_ROOT_USERNAME: admin
+  #     MONGO_INITDB_ROOT_PASSWORD: password
+  #   volumes:
+  #     - mongo_data:/data/db
+
+  spark:
+    image: bitnami/spark:latest
+    container_name: spark-delta
     environment:
-      MONGO_INITDB_DATABASE: protondb
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: password
+      - SPARK_MODE=master
     volumes:
-      - mongo_data:/data/db
+      - ./data:/data
+    ports:
+      - "7077:7077"     # Spark master port
+      - "8080:8080"     # Spark web UI
 
 volumes:
   mongo_data: {}
