@@ -87,21 +87,49 @@ def update_views():
     current_month_start = today.replace(day=1)
     last_month_start = (today - relativedelta(months=1)).replace(day=1)
     last_month_end = current_month_start - relativedelta(days=1)
-    
     for keyword in keywords:
-
+        views[keyword] = []  # Initialize with empty list
+        randomized = False
         if keyword in existing_data:
+            # Process existing entries that were randomized
+            for entry in existing_data[keyword]:
+                if entry['randomized']:
+                    before = datetime.strptime(entry['before'], "%Y-%m-%d")
+                    after = datetime.strptime(entry['after'], "%Y-%m-%d")
+                    total_views = _fetch_video_data(keyword, after, before, API_KEY)
+
+                    if total_views == 0:
+                        total_views = random.randint(0,10000000)
+                        randomized = True
+
+                    print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
+                    views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"),
+                                            "total_views": total_views, "randomized": randomized})
+                else:
+                    # Keep non-randomized entries as they are
+                    views[keyword].append(entry)
 
             #Update only the last month and current month
-            for after, before in [(current_month_start, today), (last_month_start, last_month_end)]:
-                total_views = _fetch_video_data(keyword, after, before, API_KEY)
+            for after, before in [(last_month_start, last_month_end), (current_month_start, today)]:
+                
+                # Check if entry for this period already exists
+                period_exists = any(
+                    entry["after"] == after.strftime("%Y-%m-%d") and entry["before"] == before.strftime("%Y-%m-%d")
+                    for entry in views[keyword]
+                )
+                
+                # Only add if the period doesn't already exist
+                if not period_exists:
+                    randomized = False
+                    total_views = _fetch_video_data(keyword, after, before, API_KEY)
 
-                if total_views == 0: #We have limited usage of the api, provisional random data
-                    total_views = random.randint(0,10000000)
+                    if total_views == 0:
+                        total_views = random.randint(0,10000000)
+                        randomized = True
 
-                #print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
-                views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"), "total_views": total_views})
-        
+                    print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
+                    views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"),
+                                            "total_views": total_views, "randomized": randomized})  
         else:
             #If game is new, fetch all months as before
             months = []
@@ -116,10 +144,13 @@ def update_views():
                 total_views = _fetch_video_data(keyword, after, before, API_KEY)
                 if total_views == 0: #We have limited usage of the api, provisional random data
                     total_views = random.randint(0,10000000)
-                #print(f"Total views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
+                    randomized = True
+                print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
 
 
-                views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"), "total_views": total_views})
+
+                views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"),\
+                                        "total_views": total_views, "randomized": randomized})
 
     #Save updated data to JSON file
     with open(output_file, "w", encoding="utf-8") as f:
