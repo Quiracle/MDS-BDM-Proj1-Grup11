@@ -51,14 +51,15 @@ def _fetch_video_data(keyword, pafter, pbefore, api_key, max_results=50):
     
     return total_views
 
+
+
 def update_views():
     '''
     Updates the youtube_views.json file to store the sum of the top 50 videos' views 
     of the games listed in games.csv. If the game already exists, it just updates the two last months.
 
-    PROVISIONAL: If there is no credit left in our key, the funcion randomizes the
-    views for the empty months.
-    FUTURE: To obtain more keys and if one is empty, to use the second one.
+    The 'randomized' flag is now stored at the game level instead of for each time entry.
+    If any API call for a game fails, the entire game's data will be randomized.
     '''
 
     API_KEY = _load_api_key()
@@ -76,7 +77,7 @@ def update_views():
         with open(output_file, "r", encoding="utf-8") as f:
             existing_data = json.load(f)
 
-    views = existing_data.copy() #To check the existance of the games 
+    views = {}  # New, clean data structure
     
     games_file = os.path.join(output_dir, 'youtube-games.csv')
     with open(games_file, newline='') as f:
@@ -87,77 +88,81 @@ def update_views():
     current_month_start = today.replace(day=1)
     last_month_start = (today - relativedelta(months=1)).replace(day=1)
     last_month_end = current_month_start - relativedelta(days=1)
+
     for keyword in keywords:
-        views[keyword] = []  # Initialize with empty list
-        randomized = False
+        should_randomize = False
+        entries = []
+        
+        # Check if we need to refetch all data
+        need_full_refresh = True
         if keyword in existing_data:
-            # Process existing entries that were randomized
-            for entry in existing_data[keyword]:
-                if entry['randomized']:
-                    before = datetime.strptime(entry['before'], "%Y-%m-%d")
-                    after = datetime.strptime(entry['after'], "%Y-%m-%d")
-                    total_views = _fetch_video_data(keyword, after, before, API_KEY)
-
-                    if total_views == 0:
-                        total_views = random.randint(0,10000000)
-                        randomized = True
-
-                    print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
-                    views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"),
-                                            "total_views": total_views, "randomized": randomized})
-                else:
-                    # Keep non-randomized entries as they are
-                    views[keyword].append(entry)
-
-            #Update only the last month and current month
-            for after, before in [(last_month_start, last_month_end), (current_month_start, today)]:
-                
-                # Check if entry for this period already exists
-                period_exists = any(
-                    entry["after"] == after.strftime("%Y-%m-%d") and entry["before"] == before.strftime("%Y-%m-%d")
-                    for entry in views[keyword]
-                )
-                
-                # Only add if the period doesn't already exist
-                if not period_exists:
-                    randomized = False
-                    total_views = _fetch_video_data(keyword, after, before, API_KEY)
-
-                    if total_views == 0:
-                        total_views = random.randint(0,10000000)
-                        randomized = True
-
-                    print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
-                    views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"),
-                                            "total_views": total_views, "randomized": randomized})  
-        else:
-            #If game is new, fetch all months as before
+            # Only do a partial refresh if the game exists and wasn't previously randomized
+            if not existing_data[keyword].get("randomized", False):
+                need_full_refresh = False
+        
+        if need_full_refresh:
+            # Fetch all months of data
             months = []
             for i in range(12):
                 first_day = (today - relativedelta(months=i)).replace(day=1)
                 last_day = (first_day + relativedelta(months=1)) - relativedelta(days=1)
                 months.append((first_day, last_day))
-            months.insert(0, (current_month_start, today))
+            #months.insert(0, (current_month_start, today))
             
-            views[keyword] = []
             for after, before in months:
                 total_views = _fetch_video_data(keyword, after, before, API_KEY)
-                if total_views == 0: #We have limited usage of the api, provisional random data
-                    total_views = random.randint(0,10000000)
-                    randomized = True
-                print(f"Updated views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
+                if total_views == 0:
+                    should_randomize = True
+                    total_views = random.randint(0, 10000000)
+                
+                entries.append({
+                    "after": after.strftime("%Y-%m-%d"),
+                    "before": before.strftime("%Y-%m-%d"),
+                    "total_views": total_views
+                })
+                print(f"{'Randomized' if should_randomize else 'Updated'} views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
+        else:
+            # Keep existing entries
+            for entry in existing_data[keyword].get("entries", []):
+                entries.append({
+                    "after": entry["after"],
+                    "before": entry["before"],
+                    "total_views": entry["total_views"]
+                })
+            
+            # Update only the last month and current month
+            for after, before in [(last_month_start, last_month_end), (current_month_start, today)]:
+                # Check if entry for this period already exists
+                period_exists = any(
+                    entry["after"] == after.strftime("%Y-%m-%d") and entry["before"] == before.strftime("%Y-%m-%d")
+                    for entry in entries
+                )
+                
+                # Only add if the period doesn't already exist
+                if not period_exists:
+                    total_views = _fetch_video_data(keyword, after, before, API_KEY)
+                    if total_views == 0:
+                        should_randomize = True
+                        total_views = random.randint(0, 10000000)
+                    
+                    entries.append({
+                        "after": after.strftime("%Y-%m-%d"),
+                        "before": before.strftime("%Y-%m-%d"),
+                        "total_views": total_views
+                    })
+                    print(f"{'Randomized' if should_randomize else 'Updated'} views for '{keyword}' from {after.date()} to {before.date()}: {total_views:,} views")
+        
+        # Store the entries and randomized flag at the game level
+        views[keyword] = {
+            "randomized": should_randomize,
+            "entries": entries
+        }
 
-
-
-                views[keyword].append({"after": after.strftime("%Y-%m-%d"), "before": before.strftime("%Y-%m-%d"),\
-                                        "total_views": total_views, "randomized": randomized})
-
-    #Save updated data to JSON file
+    # Save updated data to JSON file
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(views, f, indent=4)
     
     print(f"Data saved to {output_file}")
-
 
 
 if __name__ == '__main__':
