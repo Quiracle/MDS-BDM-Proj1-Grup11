@@ -1,17 +1,4 @@
 services:
-  mongo:
-    image: mongo:latest
-    container_name: twitch_mongo
-    restart: always
-    ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_DATABASE: twitch_data
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: password
-    volumes:
-      - mongo_data:/data/db
-
   mongo-express:
     image: mongo-express
     container_name: mongo_express
@@ -29,7 +16,7 @@ services:
     container_name: proton_mongo
     restart: always
     ports:
-      - "27018:27018"
+      - "27017:27017"
     environment:
       MONGO_INITDB_DATABASE: protondb
       MONGO_INITDB_ROOT_USERNAME: admin
@@ -48,16 +35,44 @@ services:
     ports:
       - "3000:3000"
 
-  spark:
+  spark-master:
     image: bitnami/spark:latest
-    container_name: spark-delta
+    container_name: spark-master
     environment:
       - SPARK_MODE=master
-    volumes:
-      - ./data:/data
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
     ports:
-      - "7077:7077"     # Spark master port
-      - "8080:8080"     # Spark web UI
+      - "7077:7077"
+      - "8080:8080"
+
+  spark-worker:
+    image: bitnami/spark:latest
+    container_name: spark-worker
+    ports:
+      - "4000:8081"
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+    volumes:
+      - ./data:/data  # Mount for reading/writing delta tables
+    depends_on:
+      - spark-master
+
+  spark-client:
+    build:
+      context: ./src/spark
+    container_name: spark-client
+    depends_on:
+      - spark-master
+      - spark-worker
+    volumes:
+      - ./data:/data  # Mount for reading/writing delta tables
+    command: ["python", "DataLakeConnector.py"]
 
 volumes:
-  mongo_data: {}
+  mongo_proton_data: {}

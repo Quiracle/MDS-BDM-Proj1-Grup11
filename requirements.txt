@@ -2,5 +2,5 @@ python-dotenv
 requests
 pymongo
 APScheduler
-pyspark==3.5.5
-delta-spark==3.3.0
+pyspark==3.4.4
+delta-spark====2.4.0
