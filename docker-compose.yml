@@ -63,16 +63,18 @@ services:
     depends_on:
       - spark-master
 
-  spark-client:
+  twitch-writer:
     build:
-      context: ./src/spark
-    container_name: spark-client
+      context: ./src/Twitch
+    container_name: twitch-writer
     depends_on:
       - spark-master
       - spark-worker
     volumes:
-      - ./data:/data  # Mount for reading/writing delta tables
-    command: ["python", "DataLakeConnector.py"]
+      - ./data:/data
+    environment:
+      - TWITCH_FETCH_INTERVAL=300  # or any other env vars you use
+    command: ["python", "TwitchDataLoader.py"]
 
 volumes:
   mongo_proton_data: {}
