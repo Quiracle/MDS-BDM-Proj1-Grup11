@@ -1,4 +1,22 @@
 services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      - zookeeper
+      
   mongo-express:
     image: mongo-express
     container_name: mongo_express
@@ -28,12 +46,12 @@ services:
     build:
       context: ./src/protondb-community-api
     container_name: proton
-    depends_on:
-      - mongo-proton
     environment:
       DB_URI: mongodb://admin:password@mongo-proton:27017/protondb
     ports:
-      - "3000:8080"
+      - "3000:3000"
+    depends_on:
+      - mongo-proton
     dns:
       - 8.8.8.8
       - 1.1.1.1
@@ -48,6 +66,7 @@ services:
         - .:/app
       ports:
         - "8082:8082"
+
 
 
   spark-master:
@@ -90,6 +109,17 @@ services:
     environment:
       - TWITCH_FETCH_INTERVAL=300  # or any other env vars you use
     command: ["python", "TwitchDataLoader.py"]
+
+  steam-writer:
+    build:
+      context: ./src/Steam
+    container_name: steam-writer
+    depends_on:
+      - spark-master
+      - spark-worker
+    volumes:
+      - ./data:/data
+    command: ["python", "SteamDataLoader.py"]
 
 volumes:
   mongo_proton_data: {}
