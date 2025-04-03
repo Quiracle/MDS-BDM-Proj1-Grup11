@@ -47,11 +47,27 @@ services:
       context: ./src/protondb-community-api
     container_name: proton
     environment:
-      MONGO_URL: mongodb://admin:password@mongo-proton:27017/protondb
+      DB_URI: mongodb://admin:password@mongo-proton:27017/protondb
     ports:
       - "3000:3000"
     depends_on:
       - mongo-proton
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+
+  proton_script:
+      build:
+        context: ./src/Protondb
+      container_name: proton_fetcher
+      depends_on:
+        - proton
+      volumes:
+        - .:/app
+      ports:
+        - "8082:8082"
+
+
 
   spark-master:
     image: bitnami/spark:latest
