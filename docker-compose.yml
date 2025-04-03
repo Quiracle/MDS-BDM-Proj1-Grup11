@@ -31,7 +31,7 @@ services:
     depends_on:
       - mongo-proton
     environment:
-      MONGO_URL: mongodb://admin:password@mongo-proton:27017/protondb
+      DB_URI: mongodb://admin:password@mongo-proton:27017/protondb
     ports:
       - "3000:3000"
 
