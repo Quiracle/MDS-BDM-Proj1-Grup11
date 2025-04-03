@@ -47,5 +47,5 @@ def process_json(input_file, output_file):
 
 if __name__ == "__main__":
     input_json = "../../landing_zone/steam_games.json"
-    output_json = "proton_results.json"
+    output_json = "../../landing_zone/proton_results.json"
     process_json(input_json, output_json)
