@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 import requests
-import csv
+import json
 
-BASE_URL = "http://localhost:8080/api"
+BASE_URL = "http://proton:8080/api"
 
 def get_game_summary(game_id):
     """Get ProtonDB summary for a game using its ID"""
@@ -16,40 +16,36 @@ def get_game_summary(game_id):
         print(f"Error {response.status_code}: {response.text}")
         return None
 
-def process_csv(input_file, output_file):
-    """Read a CSV file with game names and Steam IDs, query summaries, and write results to a new CSV file"""
-    with open(input_file, newline='', encoding='utf-8') as csvfile, \
-         open(output_file, mode='w', newline='', encoding='utf-8') as outfile:
+def process_json(input_file, output_file):
+    """Read a JSON file with game names and Steam IDs, query summaries, and write results to a new JSON file"""
+    with open(input_file, 'r', encoding='utf-8') as infile:
+        games = json.load(infile)
 
-        reader = csv.DictReader(csvfile)
-        fieldnames = [
-            "Name", "AppID",
-            "protonBestReportedTier", "protonConfidence", "protonScore",
-            "protonTier", "protonTotal", "protonTrendingTier"
-        ]
-        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-        writer.writeheader()
+    results = []
+    for game in games:
+        game_name = game.get("Name")
+        game_id = game.get("AppID")
+        print(f"\nFetching data for {game_name} (ID: {game_id})...")
 
-        for row in reader:
-            game_name = row["Name"]
-            game_id = row["AppID"]
-            print(f"\nFetching data for {game_name} (ID: {game_id})...")
+        game_summary = get_game_summary(game_id) or {}
 
-            game_summary = get_game_summary(game_id) or {}
+        result = {
+            "Name": game_name,
+            "AppID": game_id,
+            "protonBestReportedTier": game_summary.get("bestReportedTier", ""),
+            "protonConfidence": game_summary.get("confidence", ""),
+            "protonScore": game_summary.get("score", ""),
+            "protonTier": game_summary.get("tier", ""),
+            "protonTotal": game_summary.get("total", ""),
+            "protonTrendingTier": game_summary.get("trendingTier", "")
+        }
+        results.append(result)
 
-            writer.writerow({
-                "Name": game_name,
-                "AppID": game_id,
-                "protonBestReportedTier": game_summary.get("bestReportedTier", ""),
-                "protonConfidence": game_summary.get("confidence", ""),
-                "protonScore": game_summary.get("score", ""),
-                "protonTier": game_summary.get("tier", ""),
-                "protonTotal": game_summary.get("total", ""),
-                "protonTrendingTier": game_summary.get("trendingTier", "")
-            })
+    with open(output_file, 'w', encoding='utf-8') as outfile:
+        json.dump(results, outfile, indent=4)
+        print(f"\nResults written to {output_file}")
 
 if __name__ == "__main__":
-    input_csv = "steam_games.csv"
-    output_csv = "proton_results.csv"
-    process_csv(input_csv, output_csv)
-    print(f"\nResults written to {output_csv}")
+    input_json = "../../landing_zone/steam_games.json"
+    output_json = "proton_results.json"
+    process_json(input_json, output_json)
