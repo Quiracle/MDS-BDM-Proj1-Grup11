@@ -3,7 +3,7 @@
 import requests
 import json
 
-BASE_URL = "http://proton:8080/api"
+BASE_URL = "http://proton:3000/api"
 
 def get_game_summary(game_id):
     """Get ProtonDB summary for a game using its ID"""
