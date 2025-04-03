@@ -110,5 +110,16 @@ services:
       - TWITCH_FETCH_INTERVAL=300  # or any other env vars you use
     command: ["python", "TwitchDataLoader.py"]
 
+  steam-writer:
+    build:
+      context: ./src/Steam
+    container_name: steam-writer
+    depends_on:
+      - spark-master
+      - spark-worker
+    volumes:
+      - ./data:/data
+    command: ["python", "SteamDataLoader.py"]
+
 volumes:
   mongo_proton_data: {}
