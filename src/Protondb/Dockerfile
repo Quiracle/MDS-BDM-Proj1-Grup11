@@ -17,4 +17,5 @@ COPY . .
 COPY wait-for-it.sh .
 RUN chmod +x wait-for-it.sh
 
-CMD ["./wait-for-it.sh", "proton:8080", "--", "python", "-u", "ProtondbAPI.py"]
+#CMD ["./wait-for-it.sh", "proton:8080", "--", "python", "-u", "ProtondbAPI.py"]
+CMD ["python", "-u", "ProtondbAPI.py"]

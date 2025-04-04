@@ -11,7 +11,7 @@ class DeltaWriter:
         self.spark = self._create_spark_session(master)
         self.schema = StructType([
             StructField("Name", StringType(), True),
-            StructField("AppID", IntegerType(), True),
+            StructField("AppID", StringType(), True),
             StructField("protonBestReportedTier", StringType(), True),
             StructField("protonConfidence", StringType(), True),
             StructField("protonScore", StringType(), True),
