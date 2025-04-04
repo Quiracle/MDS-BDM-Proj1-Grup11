@@ -67,6 +67,7 @@ services:
         - proton
       volumes:
         - .:/app
+        - ./data:/data 
       ports:
         - "8082:8082"
 
