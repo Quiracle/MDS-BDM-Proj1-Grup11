@@ -123,5 +123,18 @@ services:
       - ./data:/data
     command: ["python", "SteamDataLoader.py"]
 
+  youtube-writer:
+    build:
+      context: ./src/Youtube
+    container_name: youtube-writer
+    depends_on:
+      - spark-master
+      - spark-worker
+    volumes:
+      - ./data:/data
+    # environment:
+    #   - YOUTUBE_FETCH_INTERVAL=3600  # Default to 1 hour
+    command: ["python", "YoutubeDataLoader.py"]
+
 volumes:
   mongo_proton_data: {}
