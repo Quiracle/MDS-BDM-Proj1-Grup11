@@ -74,23 +74,24 @@ def update_views():
     '''
 
     API_KEY = _load_api_key()
-    # Create path to landing_zone directory
-    output_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'landing_zone')
-    # Ensure the directory exists
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "youtube_views.json")
-    
+
+    # Define path relative to this script’s location
+    base_dir = os.path.dirname(__file__)  # just this repo
+
+    # Ensure JSON file will be saved here
+    output_file = os.path.join(base_dir, "youtube_views.json")
+    os.makedirs(base_dir, exist_ok=True)  # just in case
+
     existing_data = {}
-    
-    #Load existing data if JSON file exists
     if os.path.exists(output_file):
         with open(output_file, "r", encoding="utf-8") as f:
             existing_data = json.load(f)
 
-    views = {}  # New, clean data structure
-    
-    games_file = os.path.join(output_dir, 'youtube-games.csv')
-    with open(games_file, newline='') as f:
+    views = {}
+
+    # Load games.csv from the same directory
+    games_file = os.path.join(base_dir, "youtube-games.csv")
+    with open(games_file, newline='', encoding='utf-8') as f:
         reader = csv.reader(f)
         keywords = [row[1] for row in list(reader)[1:] if len(row) > 1]
     
