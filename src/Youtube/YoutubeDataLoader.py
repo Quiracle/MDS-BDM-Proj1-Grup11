@@ -2,6 +2,7 @@ import logging
 import json
 from YoutubeAPI import update_views
 from DeltaWriter import DeltaWriter
+from datetime import datetime
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -30,7 +31,8 @@ def fetch_and_store_youtube_data():
                         'period_start': entry['after'],
                         'period_end': entry['before'],
                         'total_views': entry['total_views'],
-                        'is_randomized': data['randomized']
+                        'is_randomized': data['randomized'],
+                        'timestamp': datetime.now().isoformat() 
                     })
             
             logging.info(f"Writing {len(delta_records)} YouTube view records to Delta Lake...")

@@ -132,8 +132,9 @@ services:
       - spark-worker
     volumes:
       - ./data:/data
-    # environment:
-    #   - YOUTUBE_FETCH_INTERVAL=3600  # Default to 1 hour
+      - ./landing_zone:/landing_zone 
+    env_file:
+      - .env
     command: ["python", "YoutubeDataLoader.py"]
 
 volumes:

@@ -1,5 +1,7 @@
-pyspark==3.4.0
 delta-spark==2.4.0
+pyspark==3.4.0
 python-dotenv
 apscheduler
 requests
+python-dateutil
+datetime

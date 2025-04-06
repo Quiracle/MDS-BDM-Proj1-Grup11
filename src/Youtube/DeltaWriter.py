@@ -21,7 +21,7 @@ class DeltaWriter:
             StructField("period_end", StringType(), nullable=False),
             StructField("total_views", LongType(), nullable=False),
             StructField("is_randomized", BooleanType(), nullable=False),
-            StructField("timestamp", StringType(), nullable=False)  # For recording when data was loaded
+            StructField("timestamp", StringType(), nullable=True)  # For recording when data was loaded
         ])
         
         # Delta table path
@@ -43,4 +43,5 @@ class DeltaWriter:
             raise
     
     def __del__(self):
-        self.spark.stop()
+        # Avoid doing this; moved to `stop()` method
+        pass

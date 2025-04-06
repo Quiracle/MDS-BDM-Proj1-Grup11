@@ -21,41 +21,47 @@ def _load_api_key():
     return API_KEY
 
 def _fetch_video_data(keyword, pafter, pbefore, api_key, max_results=50):
-    """Fetch video IDs and total views for the top 50 videos of
-      a given keyword within a date range."""
-    published_after = pafter.strftime("%Y-%m-%dT00:00:00Z")
-    published_before = pbefore.strftime("%Y-%m-%dT00:00:00Z")
-    
-    search_url = "https://www.googleapis.com/youtube/v3/search"
-    search_params = {
-        "part": "snippet",
-        "q": keyword,
-        "type": "video",
-        "maxResults": max_results,
-        "order": "viewCount",
-        "publishedAfter": published_after,
-        "publishedBefore": published_before,
-        "key": api_key
-    }
-    
-    response = requests.get(search_url, params=search_params)
-    video_ids = [item["id"]["videoId"] for item in response.json().get("items", [])]
-    
-    if not video_ids:
+    try:
+        published_after = pafter.strftime("%Y-%m-%dT00:00:00Z")
+        published_before = pbefore.strftime("%Y-%m-%dT00:00:00Z")
+        
+        search_url = "https://www.googleapis.com/youtube/v3/search"
+        search_params = {
+            "part": "snippet",
+            "q": keyword,
+            "type": "video",
+            "maxResults": max_results,
+            "order": "viewCount",
+            "publishedAfter": published_after,
+            "publishedBefore": published_before,
+            "key": api_key
+        }
+        
+        response = requests.get(search_url, params=search_params)
+        response.raise_for_status()  # Raises exception for 4XX/5XX status
+        
+        video_ids = [item["id"]["videoId"] for item in response.json().get("items", [])]
+        
+        if not video_ids:
+            return 0
+        
+        stats_url = "https://www.googleapis.com/youtube/v3/videos"
+        stats_params = {
+            "part": "statistics",
+            "id": ",".join(video_ids),
+            "key": api_key
+        }
+        
+        response = requests.get(stats_url, params=stats_params)
+        response.raise_for_status()
+        
+        total_views = sum(int(item["statistics"].get("viewCount", 0)) 
+                      for item in response.json().get("items", []))
+        
+        return total_views
+    except Exception as e:
+        logging.warning(f"Failed to fetch YouTube data for '{keyword}': API key usage exceeded or other error – Randomizing data")
         return 0
-    
-    stats_url = "https://www.googleapis.com/youtube/v3/videos"
-    stats_params = {
-        "part": "statistics",
-        "id": ",".join(video_ids),
-        "key": api_key
-    }
-    
-    response = requests.get(stats_url, params=stats_params)
-    total_views = sum(int(item["statistics"].get("viewCount", 0)) for item in response.json().get("items", []))
-    
-    return total_views
-
 
 
 def update_views():
@@ -68,7 +74,6 @@ def update_views():
     '''
 
     API_KEY = _load_api_key()
-    
     # Create path to landing_zone directory
     output_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'landing_zone')
     # Ensure the directory exists
