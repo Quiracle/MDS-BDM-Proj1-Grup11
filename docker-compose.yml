@@ -137,5 +137,22 @@ services:
       - .env
     command: ["python", "YoutubeDataLoader.py"]
 
+  comment-generator:
+    build:
+      context: ./src/Protondb/ProtondbCommentGenerator
+    container_name: comment_generator
+    volumes:
+      - ./data:/data
+    command: ["python", "ProtondbCommentGenerator.py"]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+
+
 volumes:
   mongo_proton_data: {}
