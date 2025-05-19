@@ -2,16 +2,14 @@ import logging
 import json
 import os
 from datetime import datetime
-from YoutubeAPI import update_views
-from DeltaWriter import DeltaWriter
+from .YoutubeAPI import update_views
+from .DeltaWriter import DeltaWriter
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Initialize Delta writer
-delta_writer = DeltaWriter()
-
 def fetch_and_store_youtube_data():
+    delta_writer = DeltaWriter()
     logging.info('Fetching YouTube views data...')
 
     # Update views data (this will create/update youtube_views.json in the same dir)

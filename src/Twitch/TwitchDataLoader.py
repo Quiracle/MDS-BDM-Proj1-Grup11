@@ -3,8 +3,8 @@
 import logging
 import time
 from dotenv import load_dotenv
-from TwitchAPI import get_access_token, get_all_streams, aggregate_viewers_by_game, get_game_names
-from DeltaWriter import DeltaWriter
+from .TwitchAPI import get_access_token, get_all_streams, aggregate_viewers_by_game, get_game_names
+from .DeltaWriter import DeltaWriter
 import os
 
 # Load environment variables
@@ -15,10 +15,11 @@ FETCH_INTERVAL = int(os.getenv('TWITCH_FETCH_INTERVAL', 300))
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Initialize Delta writer
-delta_writer = DeltaWriter()  # You can pass a path or master URL if needed
+  # You can pass a path or master URL if needed
 
 # Function to fetch and store data
 def fetch_and_store_twitch_data():
+    delta_writer = DeltaWriter()
     logging.info('Fetching Twitch data...')
     token = get_access_token()
     streams = get_all_streams(token)

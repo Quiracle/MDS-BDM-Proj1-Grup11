@@ -1,351 +1,326 @@
 {
     "Grand Theft Auto V": {
-        "randomized": false,
+        "randomized": true,
         "entries": [
+            {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 7806370
+            },
             {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 27268592
+                "total_views": 4100708
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 211029406
+                "total_views": 2038564
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 168202622
+                "total_views": 4148925
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 233601315
+                "total_views": 3107141
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 255977706
+                "total_views": 5883615
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 262487107
+                "total_views": 7519844
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 269193203
+                "total_views": 6345070
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 386949046
+                "total_views": 6129216
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 343986629
+                "total_views": 8274325
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 467914867
+                "total_views": 9329169
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 322242391
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 600963692
-            },
-            {
-                "after": "2025-04-01",
-                "before": "2025-04-06",
-                "total_views": 30876227
+                "total_views": 2615379
             }
         ]
     },
     "Counter-Strike": {
-        "randomized": false,
+        "randomized": true,
         "entries": [
+            {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 7236923
+            },
             {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 3423807
+                "total_views": 85742
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 57045068
+                "total_views": 2780428
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 72936247
+                "total_views": 7893266
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 72036631
+                "total_views": 1888037
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 69627726
+                "total_views": 845818
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 118961744
+                "total_views": 235406
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 118790943
+                "total_views": 1022208
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 74183574
+                "total_views": 6394884
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 74308702
+                "total_views": 4446641
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 54794314
+                "total_views": 3028587
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 85773102
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 106856707
-            },
-            {
-                "after": "2025-04-01",
-                "before": "2025-04-06",
-                "total_views": 4782345
+                "total_views": 2542618
             }
         ]
     },
     "Schedule I": {
-        "randomized": false,
+        "randomized": true,
         "entries": [
+            {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 4572043
+            },
             {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 16033762
+                "total_views": 8176419
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 25262134
+                "total_views": 3381826
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 1430987
+                "total_views": 6372120
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 155568
+                "total_views": 2703008
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 791091
+                "total_views": 6049579
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 23266
+                "total_views": 1909381
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 68490
+                "total_views": 7947922
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 55732
+                "total_views": 2703909
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 133794
+                "total_views": 6882902
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 93089
+                "total_views": 7068610
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 23110
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 785480
-            },
-            {
-                "after": "2025-04-01",
-                "before": "2025-04-06",
-                "total_views": 18551766
+                "total_views": 4260730
             }
         ]
     },
     "Call of Duty: Warzone": {
-        "randomized": false,
+        "randomized": true,
         "entries": [
+            {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 5762197
+            },
             {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 8869734
+                "total_views": 8190392
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 100119500
+                "total_views": 877864
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 46016438
+                "total_views": 5422991
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 250310412
+                "total_views": 2822228
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 48084005
+                "total_views": 3110956
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 42273743
+                "total_views": 3235680
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 115878331
+                "total_views": 1902467
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 180544039
+                "total_views": 1092860
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 250750744
+                "total_views": 4216484
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 136878183
+                "total_views": 8370967
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 160963250
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 181121809
-            },
-            {
-                "after": "2025-04-01",
-                "before": "2025-04-06",
-                "total_views": 10145679
+                "total_views": 1617651
             }
         ]
     },
     "Marvel Rivals": {
-        "randomized": false,
+        "randomized": true,
         "entries": [
+            {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 3999385
+            },
             {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 26956224
+                "total_views": 5197879
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 76303557
+                "total_views": 5756035
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 99706089
+                "total_views": 748015
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 131889976
+                "total_views": 631907
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 140432518
+                "total_views": 7292271
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 25245578
+                "total_views": 1268443
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 6795184
+                "total_views": 8209544
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 10944800
+                "total_views": 6738410
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 23628130
+                "total_views": 4274768
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 56850129
+                "total_views": 7075736
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 2242683
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 29841002
-            },
-            {
-                "after": "2025-04-01",
-                "before": "2025-04-06",
-                "total_views": 36783479
+                "total_views": 9593837
             }
         ]
     },
@@ -353,64 +328,64 @@
         "randomized": true,
         "entries": [
             {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 5044165
+            },
+            {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 5494278
+                "total_views": 6498717
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 3167755
+                "total_views": 8710983
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 8398072
+                "total_views": 4878461
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 1202961
+                "total_views": 3911900
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 2684311
+                "total_views": 148762
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 5880689
+                "total_views": 9191149
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 8584342
+                "total_views": 8135918
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 8603130
+                "total_views": 7619751
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 1713665
+                "total_views": 3811320
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 8113507
+                "total_views": 4550457
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 1986031
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 777699
+                "total_views": 7799748
             }
         ]
     },
@@ -418,64 +393,64 @@
         "randomized": true,
         "entries": [
             {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 7883312
+            },
+            {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 5084204
+                "total_views": 4501994
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 4816439
+                "total_views": 8006623
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 6571357
+                "total_views": 3888505
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 3477708
+                "total_views": 8992838
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 8593054
+                "total_views": 9737947
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 2062863
+                "total_views": 5568417
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 1387464
+                "total_views": 9269008
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 6633505
+                "total_views": 1225049
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 579035
+                "total_views": 1144455
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 9425701
+                "total_views": 9534275
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 5661828
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 5309904
+                "total_views": 1725959
             }
         ]
     },
@@ -483,64 +458,64 @@
         "randomized": true,
         "entries": [
             {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 6226309
+            },
+            {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 6743156
+                "total_views": 8928738
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 4272471
+                "total_views": 4610
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 9909767
+                "total_views": 9719554
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 8390825
+                "total_views": 1682182
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 7909927
+                "total_views": 1296205
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 5689191
+                "total_views": 4063354
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 8307815
+                "total_views": 8981981
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 6594359
+                "total_views": 2221010
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 4617593
+                "total_views": 782435
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 7461923
+                "total_views": 6738533
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 363702
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 7767200
+                "total_views": 3017295
             }
         ]
     },
@@ -548,64 +523,64 @@
         "randomized": true,
         "entries": [
             {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 1203155
+            },
+            {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 9177120
+                "total_views": 7517087
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 253807
+                "total_views": 9881841
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 5180133
+                "total_views": 8910492
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 2911725
+                "total_views": 3365099
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 3513076
+                "total_views": 1056368
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 7869046
+                "total_views": 9661068
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 4300785
+                "total_views": 8060552
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 8102845
+                "total_views": 8339719
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 2983606
+                "total_views": 1009160
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 2877752
+                "total_views": 2623024
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 3121384
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 422548
+                "total_views": 8657497
             }
         ]
     },
@@ -613,64 +588,64 @@
         "randomized": true,
         "entries": [
             {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 9719088
+            },
+            {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 7705995
+                "total_views": 4912834
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 9886267
+                "total_views": 5208728
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 9024361
+                "total_views": 6243937
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 1224019
+                "total_views": 2331742
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 887586
+                "total_views": 2051454
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 1475756
+                "total_views": 14592
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 4275400
+                "total_views": 2879480
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 4388804
+                "total_views": 4789650
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 7304950
+                "total_views": 5707438
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 8965531
+                "total_views": 4200174
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 8205429
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 8540117
+                "total_views": 1070820
             }
         ]
     },
@@ -678,64 +653,64 @@
         "randomized": true,
         "entries": [
             {
+                "after": "2025-05-01",
+                "before": "2025-05-31",
+                "total_views": 2509317
+            },
+            {
                 "after": "2025-04-01",
                 "before": "2025-04-30",
-                "total_views": 4999509
+                "total_views": 4852265
             },
             {
                 "after": "2025-03-01",
                 "before": "2025-03-31",
-                "total_views": 7286341
+                "total_views": 9555625
             },
             {
                 "after": "2025-02-01",
                 "before": "2025-02-28",
-                "total_views": 5205756
+                "total_views": 3460579
             },
             {
                 "after": "2025-01-01",
                 "before": "2025-01-31",
-                "total_views": 4720887
+                "total_views": 8466065
             },
             {
                 "after": "2024-12-01",
                 "before": "2024-12-31",
-                "total_views": 7422970
+                "total_views": 5153674
             },
             {
                 "after": "2024-11-01",
                 "before": "2024-11-30",
-                "total_views": 4590643
+                "total_views": 5865507
             },
             {
                 "after": "2024-10-01",
                 "before": "2024-10-31",
-                "total_views": 4509462
+                "total_views": 2650882
             },
             {
                 "after": "2024-09-01",
                 "before": "2024-09-30",
-                "total_views": 1950258
+                "total_views": 4979559
             },
             {
                 "after": "2024-08-01",
                 "before": "2024-08-31",
-                "total_views": 9897529
+                "total_views": 6999537
             },
             {
                 "after": "2024-07-01",
                 "before": "2024-07-31",
-                "total_views": 5553281
+                "total_views": 4455163
             },
             {
                 "after": "2024-06-01",
                 "before": "2024-06-30",
-                "total_views": 5355774
-            },
-            {
-                "after": "2024-05-01",
-                "before": "2024-05-31",
-                "total_views": 8381712
+                "total_views": 8199304
             }
         ]
     }

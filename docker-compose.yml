@@ -59,18 +59,6 @@ services:
       - 8.8.8.8
       - 1.1.1.1
 
-  proton_script:
-      build:
-        context: ./src/Protondb
-      container_name: proton_fetcher
-      depends_on:
-        - proton
-      volumes:
-        - .:/app
-        - ./data:/data 
-      ports:
-        - "8082:8082"
-
   spark-master:
     image: bitnami/spark:latest
     container_name: spark-master
@@ -99,58 +87,20 @@ services:
     depends_on:
       - spark-master
 
-  twitch-writer:
-    build:
-      context: ./src/Twitch
-    container_name: twitch-writer
-    depends_on:
-      - spark-master
-      - spark-worker
-    volumes:
-      - ./data:/data
-    environment:
-      - TWITCH_FETCH_INTERVAL=300  # or any other env vars you use
-    command: ["python", "TwitchDataLoader.py"]
-
-  steam-writer:
-    build:
-      context: ./src/Steam
-    container_name: steam-writer
-    depends_on:
-      - spark-master
-      - spark-worker
-    volumes:
-      - ./data:/data
-    command: ["python", "SteamDataLoader.py"]
-
-  youtube-writer:
-    build:
-      context: ./src/Youtube
-    container_name: youtube-writer
-    depends_on:
-      - spark-master
-      - spark-worker
-    volumes:
-      - ./data:/data
-      - ./landing_zone:/landing_zone 
-    env_file:
-      - .env
-    command: ["python", "YoutubeDataLoader.py"]
-
-  comment-generator:
-    build:
-      context: ./src/Protondb/ProtondbCommentGenerator
-    container_name: comment_generator
-    volumes:
-      - ./data:/data
-    command: ["python", "ProtondbCommentGenerator.py"]
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+  # comment-generator:
+  #   build:
+  #     context: ./src/Protondb/ProtondbCommentGenerator
+  #   container_name: comment_generator
+  #   volumes:
+  #     - ./data:/data
+  #   command: ["python", "ProtondbCommentGenerator.py"]
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
 
 
   mongo-trusted:
@@ -178,39 +128,73 @@ services:
       - DOCKER_INFLUXDB_INIT_BUCKET=steammetrics
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=admintoken
 
-  duckdb-loader:
-    build:
-      context: ./src/DuckDB
-    container_name: duckdb_loader
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
     volumes:
-      - ./data:/data
-    command: ["python", "duckdb_loader.py"]
-    depends_on:
-      - spark-master
+      - postgres_data:/var/lib/postgresql/data
 
-  mongo-loader:
-    build:
-      context: ./src/MongoLoader
-    container_name: mongo_loader
-    volumes:
-      - ./data:/data
-    command: ["python", "mongo_loader.py"]
+  airflow-init:
+    image: apache/airflow:2.6.3
     depends_on:
-      - mongo-trusted
-      - spark-master
-      - steam-writer
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__WEBSERVER__SECRET_KEY: your_secret_key
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: >
+      bash -c "airflow db init && airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin"
 
-  influx-loader:
+  airflow-webserver:
     build:
-      context: ./src/InfluxLoader
-    container_name: influx_loader
-    volumes:
-      - ./data:/data
-    command: ["python", "influx_loader.py"]
+      context: ./airflow         # 👈 Path to Dockerfile directory
+      dockerfile: Dockerfile     # 👈 Optional, defaults to 'Dockerfile'
+    image: custom-airflow:latest
     depends_on:
-      - influx-trusted
-      - spark-master
-      - twitch-writer
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__WEBSERVER__SECRET_KEY: your_secret_key
+      AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.default  # Disable authentication
+      PYTHONPATH: /opt/airflow/src
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./src:/opt/airflow/src
+    command: webserver
+
+  airflow-scheduler:
+    build:
+      context: ./airflow         # 👈 Path to Dockerfile directory
+      dockerfile: Dockerfile     # 👈 Optional, defaults to 'Dockerfile'
+    image: custom-airflow:latest
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      PYTHONPATH: /opt/airflow/src
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./src:/opt/airflow/src
+    command: scheduler
+
 
 volumes:
   mongo_proton_data: {}
+  postgres_data:

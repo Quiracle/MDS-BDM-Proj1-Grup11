@@ -7,10 +7,8 @@ services:
       POSTGRES_DB: airflow
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    networks:
-      - airflow_network
 
-  airflow-webserver:
+  airflow-init:
     image: apache/airflow:2.6.3
     depends_on:
       - postgres
@@ -18,34 +16,54 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__WEBSERVER__SECRET_KEY: your_secret_key
-      AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.default  # Disable authentication
-    ports:
-      - "8080:8080"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-    networks:
-      - airflow_network
-    command: webserver
+    command: >
+      bash -c "airflow db init && airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin"
 
-  airflow-scheduler:
-    image: apache/airflow:2.6.3
+  airflow-webserver:
+    build:
+      context: ./airflow         # 👈 Path to Dockerfile directory
+      dockerfile: Dockerfile     # 👈 Optional, defaults to 'Dockerfile'
+    image: custom-airflow:latest
     depends_on:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      AIRFLOW__WEBSERVER__SECRET_KEY: your_secret_key
+      AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.default  # Disable authentication
+      PYTHONPATH: /opt/airflow/src
+    ports:
+      - "8082:8080"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-    networks:
-      - airflow_network
+      - ./src:/opt/airflow/src
+    command: webserver
+
+  airflow-scheduler:
+    build:
+      context: ./airflow         # 👈 Path to Dockerfile directory
+      dockerfile: Dockerfile     # 👈 Optional, defaults to 'Dockerfile'
+    image: custom-airflow:latest
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+      PYTHONPATH: /opt/airflow/src
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./src:/opt/airflow/src
     command: scheduler
 
 volumes:
   postgres_data:
-
-networks:
-  airflow_network:

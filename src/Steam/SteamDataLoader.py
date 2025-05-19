@@ -1,9 +1,9 @@
 import logging
 #from dotenv import load_dotenv
-from SteamGamesAPI import fetch_steam_game_data , fetch_steam_game_data_json
-from SteamUsersAPI import fetch_steam_user_data , fetch_steam_user_data_json
-from DeltaWriterGames import DeltaWriter as DG
-from DeltaWriterUsers import DeltaWriter as DU
+from .SteamGamesAPI import fetch_steam_game_data , fetch_steam_game_data_json
+from .SteamUsersAPI import fetch_steam_user_data , fetch_steam_user_data_json
+from .DeltaWriterGames import DeltaWriter as DG
+from .DeltaWriterUsers import DeltaWriter as DU
 
 # Load environment variables
 #load_dotenv()
@@ -12,11 +12,12 @@ from DeltaWriterUsers import DeltaWriter as DU
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Initialize Delta writers
-delta_writer_games = DG()  
-delta_writer_users = DU()
+
 
 # Function to fetch and store data
 def fetch_and_store_steam_data():
+    delta_writer_games = DG()  
+    delta_writer_users = DU()
     logging.info('Fetching Steam game data...')
     records = fetch_steam_game_data_json() #Change this to call API instead of json
     if records:
