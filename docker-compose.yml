@@ -157,6 +157,64 @@ services:
               capabilities: [gpu]
 
 
+  mongo-trusted:
+    image: mongo:latest
+    container_name: mongo_trusted
+    restart: always
+    ports:
+      - "27117:27017"
+    volumes:
+      - ./data/trusted_zone/mongodb:/data/db
+
+  influx-trusted:
+    image: influxdb:2.7
+    container_name: influx_trusted
+    restart: always
+    ports:
+      - "8087:8086"
+    volumes:
+      - ./data/trusted_zone/influxdb:/var/lib/influxdb2
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=admin123
+      - DOCKER_INFLUXDB_INIT_ORG=steamorg
+      - DOCKER_INFLUXDB_INIT_BUCKET=steammetrics
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=admintoken
+
+  duckdb-loader:
+    build:
+      context: ./src/DuckDB
+    container_name: duckdb_loader
+    volumes:
+      - ./data:/data
+    command: ["python", "duckdb_loader.py"]
+    depends_on:
+      - spark-master
+
+  mongo-loader:
+    build:
+      context: ./src/MongoLoader
+    container_name: mongo_loader
+    volumes:
+      - ./data:/data
+    command: ["python", "mongo_loader.py"]
+    depends_on:
+      - mongo-trusted
+      - spark-master
+      - steam-writer
+
+  influx-loader:
+    build:
+      context: ./src/InfluxLoader
+    container_name: influx_loader
+    volumes:
+      - ./data:/data
+    command: ["python", "influx_loader.py"]
+    depends_on:
+      - influx-trusted
+      - spark-master
+      - twitch-writer
 
 volumes:
   mongo_proton_data: {}
