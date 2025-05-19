@@ -3,7 +3,6 @@
 import logging
 import time
 from dotenv import load_dotenv
-from apscheduler.schedulers.blocking import BlockingScheduler
 from TwitchAPI import get_access_token, get_all_streams, aggregate_viewers_by_game, get_game_names
 from DeltaWriter import DeltaWriter
 import os
@@ -17,9 +16,6 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Initialize Delta writer
 delta_writer = DeltaWriter()  # You can pass a path or master URL if needed
-
-# Scheduler instance
-scheduler = BlockingScheduler()
 
 # Function to fetch and store data
 def fetch_and_store_twitch_data():
@@ -45,9 +41,6 @@ def fetch_and_store_twitch_data():
     else:
         logging.info("No data to write.")
 
-# Schedule the job
-scheduler.add_job(fetch_and_store_twitch_data, 'interval', seconds=FETCH_INTERVAL)
-
-if __name__ == '__main__':
-    logging.info(f'Starting scheduled Twitch data collection every {FETCH_INTERVAL} seconds...')
-    scheduler.start()
+if __name__ == "__main__":
+    while True:
+        fetch_and_store_twitch_data()
