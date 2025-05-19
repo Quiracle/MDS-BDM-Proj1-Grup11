@@ -141,9 +141,13 @@ services:
     build:
       context: ./src/Protondb/ProtondbCommentGenerator
     container_name: comment_generator
+    env_file:
+      - .env
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
     volumes:
       - ./data:/data
-    command: ["python", "ProtondbCommentGenerator.py"]
+    command: ["sh", "-c", "python ProtondbCommentGenerator.py && python ReviewClassifier.py"]
     deploy:
       resources:
         reservations:
