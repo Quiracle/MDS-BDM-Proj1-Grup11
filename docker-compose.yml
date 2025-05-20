@@ -216,5 +216,13 @@ services:
       - spark-master
       - twitch-writer
 
+  streamlit-dashboard:
+    build:
+      context: ./src/Frontend
+    container_name: streamlit_dashboard
+    ports:
+      - "8501:8501"
+    restart: always
+
 volumes:
   mongo_proton_data: {}
