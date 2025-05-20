@@ -36,7 +36,7 @@ def run():
     dfs = []
     for folder in folders:
         try:
-            twitch_df = spark.read.format("delta").load(f"file://{folder}")
+            twitch_df = spark.read.format("delta").load(folder)
             dfs.append(twitch_df)
         except Exception as e:
             print(f"Skipping {folder} due to error: {e}")

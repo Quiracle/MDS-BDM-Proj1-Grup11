@@ -13,7 +13,7 @@ def run():
         .getOrCreate()
 
     # Find all matching Delta folders
-    base_path = "/opt/airflow/data/delta/"
+    base_path = "/opt/airflow/data/delta"
     pattern = os.path.join(base_path, "youtube_data_*")
     folders = sorted(glob.glob(pattern))
 
@@ -23,7 +23,7 @@ def run():
     dfs = []
     for folder in folders:
         try:
-            df = spark.read.format("delta").load(f"file://{folder}")
+            df = spark.read.format("delta").load(folder)
             dfs.append(df)
         except Exception as e:
             print(f"Skipping {folder} due to error: {e}")
