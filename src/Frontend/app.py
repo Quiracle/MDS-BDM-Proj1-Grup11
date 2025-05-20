@@ -7,9 +7,10 @@ st.title("📊 Project Service Dashboard")
 st.markdown("### 🔗 Quick Links")
 
 services = {
-    "Airflow": "http://localhost:8081",
+    "MongoDB": "http://localhost:8081",
+    "Airflow": "http://localhost:8082",
     "InfluxDB": "http://localhost:8087",
-    "MongoDB": "http://localhost:8080"
+    "Spark": "http://localhost:8080",
 }
 
 for name, url in services.items():
