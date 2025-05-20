@@ -1,0 +1,7 @@
+python-dotenv
+requests
+pymongo
+APScheduler
+pyspark==3.4.4
+delta-spark==2.4.0
+influxdb-client
