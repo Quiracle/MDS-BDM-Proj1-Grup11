@@ -13,11 +13,11 @@ def run():
         .getOrCreate()
 
     # Find all matching Delta folders
-    base_path = "/data/delta/"
-    pattern = os.path.join(base_path, "proton_data_*")
+    base_path = "/opt/airflow/data/delta/"
+    pattern = os.path.join(base_path, "youtube_data_*")
     folders = sorted(glob.glob(pattern))
 
-    print(f"Found {len(folders)} proton_data folders")
+    print(f"Found {len(folders)} youtube_data folders")
 
     # Load only valid ones
     dfs = []
@@ -39,7 +39,7 @@ def run():
         json_data = [row.asDict() for row in combined_df.collect()]
 
         # Write to MongoDB
-        client = MongoClient("mongodb://mongo_trusted:27017/")
+        client = MongoClient("mongodb://admin:password@mongo_trusted:27017/")
         db = client["trusted_zone"]
         collection = db["reviews"]
         collection.delete_many({})

@@ -1,6 +1,8 @@
 from influxdb_client import InfluxDBClient, Point, WriteOptions
 from influxdb_client.client.write_api import SYNCHRONOUS
 from pyspark.sql import SparkSession
+import glob
+import os
 
 def run():
     # Influx config
@@ -24,17 +26,36 @@ def run():
     )
 
     # Load Twitch data from delta
-    twitch_df = spark.read.format("delta").load("file:///data/delta/twitch_data_*/")
+    base_path = "/opt/airflow/data/delta/"
+    pattern = os.path.join(base_path, "twitch_data_*")
+    folders = sorted(glob.glob(pattern))
+
+    print(f"Found {len(folders)} twitch_data folders")
+
+    # Load only valid ones
+    dfs = []
+    for folder in folders:
+        try:
+            twitch_df = spark.read.format("delta").load(f"file://{folder}")
+            dfs.append(twitch_df)
+        except Exception as e:
+            print(f"Skipping {folder} due to error: {e}")
 
     # Write to InfluxDB
-    for row in twitch_df.collect():
-        point = (
-            Point("twitch_views")
-            .tag("game", row["game_name"])
-            .field("viewers", int(row["viewers"]))
-            .time(int(row["timestamp"] * 1e9))  # nanoseconds
-        )
-        write_api.write(bucket=bucket, org=org, record=point)
+    for df in dfs:
+        rows = df.collect()
+        points = []
+        for row in rows:
+            point = (
+                Point("twitch_views")
+                .tag("game", row["game_name"])
+                .field("viewers", int(row["viewers"]))
+                .time(int(row["timestamp"] * 1e9))
+            )
+            points.append(point)
+
+            # ✅ batch write once per DataFrame
+        write_api.write(bucket=bucket, org=org, record=points)
 
     print("Twitch viewers inserted into InfluxDB (trusted zone)")
 

@@ -7,7 +7,7 @@ from pyspark.sql.types import StructType, StructField, StringType, LongType, Dou
 from datetime import datetime
 
 class DeltaWriter:
-    def __init__(self, delta_path="file:///data/delta/twitch_data", master="local[*]"):
+    def __init__(self, delta_path="/opt/airflow/data/delta/twitch_data", master="local[*]"):
         self.base_delta_path = delta_path
         self.master = master  # Defer spark creation
         # Remove self.spark and self.schema from __init__
@@ -15,7 +15,7 @@ class DeltaWriter:
     def _create_spark_session(self):
         builder = (
             SparkSession.builder
-            .appName("DeltaLakeWriter")
+            .appName("TwitchDeltaLakeWriter")
             .master(self.master)
             .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
             .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
@@ -45,3 +45,4 @@ class DeltaWriter:
 
         df.write.format("delta").mode("append").save(delta_path_with_timestamp)
         print(f"Wrote {len(records)} records to Delta Lake at {delta_path_with_timestamp}")
+

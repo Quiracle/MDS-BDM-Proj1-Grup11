@@ -1,21 +1,32 @@
 from pyspark.sql import SparkSession
+from delta import configure_spark_with_delta_pip
 from pyspark.sql.types import StructType, StructField, StringType, LongType, BooleanType
 import logging
+from datetime import datetime
+
 
 class DeltaWriter:
-    def __init__(self):
-        # Setup logging
-        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    def __init__(self, delta_path="/opt/airflow/data/delta/youtube_data", master="local[*]"):
+        self.base_delta_path = delta_path
+        self.master = master  # Defer spark creation
+        # Remove self.spark and self.schema from __init__
         
         # Initialize Spark session with Delta Lake
-        self.spark = SparkSession.builder \
-            .appName("YouTubeDataWriter") \
-            .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-            .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
-            .getOrCreate()
-            
-        # Define schema for YouTube data
-        self.schema = StructType([
+    def _create_spark_session(self):
+        builder = (
+            SparkSession.builder
+            .appName("TwitchDeltaLakeWriter")
+            .master(self.master)
+            .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
+            .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+        )
+        return configure_spark_with_delta_pip(builder).getOrCreate()
+        
+        # Delta table path
+        self.table_path = "../data/delta/youtube_data"
+    
+    def _get_schema(self):
+        return StructType([
             StructField("game", StringType(), nullable=False),
             StructField("period_start", StringType(), nullable=False),
             StructField("period_end", StringType(), nullable=False),
@@ -23,19 +34,21 @@ class DeltaWriter:
             StructField("is_randomized", BooleanType(), nullable=False),
             StructField("timestamp", StringType(), nullable=True)  # For recording when data was loaded
         ])
-        
-        # Delta table path
-        self.table_path = "../data/delta/youtube_data"
     
     def write_records(self, records):
         try:
             # Convert records to DataFrame
-            df = self.spark.createDataFrame(records, schema=self.schema)
-            
+            spark = self._create_spark_session()
+            schema = self._get_schema()
+            df = spark.createDataFrame(records, schema=schema)
+
+            timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+            delta_path_with_timestamp = f"{self.base_delta_path}_{timestamp}"
+
             # Write to Delta Lake
             df.write.format("delta") \
                 .mode("append") \
-                .save(self.table_path)
+                .save(delta_path_with_timestamp)
                 
             logging.info(f"Successfully wrote {df.count()} records to Delta Lake")
         except Exception as e:

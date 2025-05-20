@@ -26,10 +26,10 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: password
-      ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongo-proton:27017/
+      ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongo-trusted:27017/
       ME_CONFIG_BASICAUTH: false
     depends_on:
-      - mongo-proton
+      - mongo-trusted
 
   mongo-proton:
     image: mongo:latest
@@ -106,9 +106,13 @@ services:
   mongo-trusted:
     image: mongo:latest
     container_name: mongo_trusted
-    restart: always
+    restart: "no"
     ports:
-      - "27117:27017"
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_DATABASE: protondb
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./data/trusted_zone/mongodb:/data/db
 
@@ -173,6 +177,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
     command: webserver
 
   airflow-scheduler:
@@ -192,6 +197,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
     command: scheduler
 
 

@@ -43,5 +43,4 @@ def fetch_and_store_twitch_data():
         logging.info("No data to write.")
 
 if __name__ == "__main__":
-    while True:
-        fetch_and_store_twitch_data()
+    fetch_and_store_twitch_data()

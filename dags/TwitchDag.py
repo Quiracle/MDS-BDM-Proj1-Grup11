@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 from Twitch.TwitchDataLoader import fetch_and_store_twitch_data
 from Steam.SteamDataLoader import fetch_and_store_steam_data
 from Youtube.YoutubeDataLoader import fetch_and_store_youtube_data
-from MongoLoader.mongo_loader import run as run_mongo_loader 
-from InfluxLoader.influx_loader import run as run_influx_loader
+from MongoLoader.mongo_loader import run as mongo_loader 
+from InfluxLoader.influx_loader import run as influx_loader
 
 def run_steam_data_loader(**kwargs):
     fetch_and_store_steam_data()
@@ -19,10 +19,10 @@ def run_twitch_data_loader(**kwargs):
     fetch_and_store_twitch_data()
 
 def run_mongo_loader(**kwargs):
-    run_mongo_loader()
+    mongo_loader()
 
 def run_influx_loader(**kwargs):
-    run_influx_loader()
+    influx_loader()
 
 default_args = {
     'owner': 'airflow',
