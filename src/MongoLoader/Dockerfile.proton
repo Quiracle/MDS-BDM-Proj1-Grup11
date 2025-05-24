@@ -1,0 +1,18 @@
+FROM openjdk:11-slim
+
+# Install Python, pip, and necessary utilities
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip procps && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Symlink for PySpark compatibility
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+WORKDIR /app
+COPY proton_trusted_loader.py .
+
+# Install required libraries
+RUN pip install --no-cache-dir pyspark==3.4.4 delta-spark==2.4.0 pymongo
+
+VOLUME ["/data"]
+CMD ["python", "proton_trusted_loader.py"]

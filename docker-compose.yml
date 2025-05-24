@@ -30,6 +30,8 @@ services:
       ME_CONFIG_BASICAUTH: false
     depends_on:
       - mongo-trusted
+    networks:
+      - default
 
   mongo-proton:
     image: mongo:latest
@@ -106,7 +108,7 @@ services:
   mongo-trusted:
     image: mongo:latest
     container_name: mongo_trusted
-    restart: "no"
+    restart: always
     ports:
       - "27018:27017"
     environment:
@@ -115,6 +117,19 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./data/trusted_zone/mongodb:/data/db
+    networks:
+      - default
+
+  proton-trusted-loader:
+    build:
+      context: ./src/MongoLoader
+      dockerfile: Dockerfile.proton.trusted
+    container_name: proton_trusted_loader
+    volumes:
+      - ./data:/data
+    depends_on:
+      - mongo-trusted
+      - spark-master
 
   influx-trusted:
     image: influxdb:2.7

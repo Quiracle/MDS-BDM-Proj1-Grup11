@@ -3,6 +3,7 @@
 import requests
 import csv
 import time
+import os
 from delta_writer import DeltaWriter
 
 BASE_URL = "http://proton:3000/api"
@@ -55,6 +56,7 @@ def process_csv(input_file, delta_writer):
     delta_writer.write_records(results)
 
 if __name__ == "__main__":
-    input_csv = "../Steam/steam_games.csv"
+    # Use absolute path to the CSV file
+    input_csv = "/app/src/Steam/steam_games.csv"
     writer = DeltaWriter()
     process_csv(input_csv, writer)
