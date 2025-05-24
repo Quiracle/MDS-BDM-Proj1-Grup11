@@ -43,6 +43,15 @@ def run():
         # Keep the most recent record for each AppID
         deduped_df = combined_df.dropDuplicates(["AppID"])
         
+        # Remove entries with missing scores (current, trending, historical_max)
+        required_score_cols = ["protonTier", "protonTrendingTier", "protonBestReportedTier"]
+        for col in required_score_cols:
+            deduped_df = deduped_df.filter(F.col(col).isNotNull())
+        
+        # Normalize tier values to lowercase
+        for col in required_score_cols:
+            deduped_df = deduped_df.withColumn(col, F.lower(F.col(col)))
+
         # Add timestamp for when the data was loaded to trusted zone
         deduped_df = deduped_df.withColumn("trusted_zone_timestamp", 
                                          F.lit(datetime.now().isoformat()))
