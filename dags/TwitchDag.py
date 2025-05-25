@@ -8,6 +8,8 @@ from Steam.SteamDataLoader import fetch_and_store_steam_data
 from Youtube.YoutubeDataLoader import fetch_and_store_youtube_data
 from MongoLoader.mongo_loader import run as mongo_loader 
 from InfluxLoader.influx_loader import run as influx_loader
+from DuckLoader.duckdb_loader_to_trusted import run as duck_loader_trusted
+from DuckLoader.duckdb_loader_to_explotation import run as duck_loader_explotation
 
 def run_steam_data_loader(**kwargs):
     fetch_and_store_steam_data()
@@ -23,6 +25,16 @@ def run_mongo_loader(**kwargs):
 
 def run_influx_loader(**kwargs):
     influx_loader()
+
+def run_duck_loader_trusted(**kwargs):
+    duck_loader_trusted()
+
+def run_duck_loader_explotation(**kwargs):
+    duck_loader_explotation()
+
+
+
+
 
 default_args = {
     'owner': 'airflow',
@@ -57,7 +69,7 @@ with DAG(
             provide_context=True,
         )
 
-    with TaskGroup("load_data") as load_data:
+    with TaskGroup("load_data_trusted") as load_data:
         run_mongo_loader_task = PythonOperator(
             task_id='run_mongo_loader',
             python_callable=run_mongo_loader,
@@ -68,5 +80,16 @@ with DAG(
             python_callable=run_influx_loader,
             provide_context=True,
         )
+        run_duck_loader_trusted_task = PythonOperator(
+            task_id='run_duck_loader_trusted',
+            python_callable=run_duck_loader_trusted,
+            provide_context=True,
+        )
 
+    with TaskGroup("load_data_explotation") as load_data:
+        run_duck_loader_trusted_task = PythonOperator(
+            task_id='run_duck_loader_explotation',
+            python_callable=run_duck_loader_explotation,
+            provide_context=True,
+        )
     collect_data >> load_data

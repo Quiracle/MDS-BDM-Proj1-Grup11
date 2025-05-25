@@ -3,11 +3,12 @@ import time
 import json
 import pandas as pd
 import logging
+import os
 
 # Optional: configure logging level here
 logging.basicConfig(level=logging.INFO)
 
-API_KEY = " MIRA MIRA"
+API_KEY =  os.getenv('STEAM_KEY')
 
 PLAYER_SUMMARY_URL = "https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/"
 STEAM_LEVEL_URL = "https://api.steampowered.com/IPlayerService/GetSteamLevel/v1/"
