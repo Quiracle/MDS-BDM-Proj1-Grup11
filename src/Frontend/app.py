@@ -7,7 +7,8 @@ st.title("📊 Project Service Dashboard")
 st.markdown("### 🔗 Quick Links")
 
 services = {
-    "MongoDB": "http://localhost:8081",
+    "MongoDB - Trusted Zone": "http://localhost:8081",
+    "MongoDB - Exploitation Zone": "http://localhost:8083",
     "Airflow": "http://localhost:8082",
     "InfluxDB": "http://localhost:8087",
     "Spark": "http://localhost:8080",

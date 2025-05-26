@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
@@ -19,12 +17,30 @@ services:
     depends_on:
       - zookeeper
       
-  mongo-express:
+  mongo-express-trusted:
     image: mongo-express
-    container_name: mongo_express
+    container_name: mongo_express-trusted
     restart: always
     ports:
       - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_URL: mongodb://admin:password@mongo-trusted:27017/
+      ME_CONFIG_MONGODB_SERVER: mongo-trusted
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: true
+      ME_CONFIG_BASICAUTH: false
+    depends_on:
+      - mongo-trusted
+    networks:
+      - default
+
+  mongo-express-exploitation:
+    image: mongo-express
+    container_name: mongo_express-exploitation
+    restart: always
+    ports:
+      - "8083:8081"
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: password
@@ -241,25 +257,25 @@ services:
     networks:
       - default
 
-  proton-exploitation-loader:
-    build:
-      context: ./src/MongoLoader
-      dockerfile: Dockerfile.proton.exploitation
-    container_name: proton_exploitation_loader
-    environment:
-      - HF_TOKEN=${HF_TOKEN}
-    depends_on:
-      - mongo-trusted
-      - mongo-exploitation
-    networks:
-      - default
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+  # proton-exploitation-loader:
+  #   build:
+  #     context: ./src/MongoLoader
+  #     dockerfile: Dockerfile.proton.exploitation
+  #   container_name: proton_exploitation_loader
+  #   environment:
+  #     - HF_TOKEN=${HF_TOKEN}
+  #   depends_on:
+  #     - mongo-trusted
+  #     - mongo-exploitation
+  #   networks:
+  #     - default
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
 
 volumes:
   mongo_proton_data: {}

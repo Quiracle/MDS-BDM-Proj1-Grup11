@@ -46,27 +46,30 @@ default_args = {
 with DAG(
     dag_id='twitch_data_loader_dag',
     default_args=default_args,
-    description='DAG to execute TwitchDataLoader',
+    description='DAG to execute all workflows',
     schedule_interval='@daily',
     start_date=datetime(2024, 1, 1),
     catchup=False,
-    tags=['twitch', 'data'],
+    tags=['twitch', 'data', 'loader', 'youtube', 'steam', 'mongo', 'influx', 'duckdb'],
 ) as dag:
     with TaskGroup("collect_data") as collect_data:
         run_steam_loader = PythonOperator(
             task_id='run_steam_data_loader',
             python_callable=run_steam_data_loader,
             provide_context=True,
+            trigger_rule='all_done',
         )
         run_youtube_loader = PythonOperator(
             task_id='run_youtube_data_loader',
             python_callable=run_youtube_data_loader,
             provide_context=True,
+            trigger_rule='all_done',
         )
         run_twitch_loader = PythonOperator(
             task_id='run_twitch_data_loader',
             python_callable=run_twitch_data_loader,
             provide_context=True,
+            trigger_rule='all_done',
         )
 
     with TaskGroup("load_data_trusted") as load_data:
@@ -74,22 +77,26 @@ with DAG(
             task_id='run_mongo_loader',
             python_callable=run_mongo_loader,
             provide_context=True,
+            trigger_rule='all_done',
         )
         run_influx_loader_task = PythonOperator(
             task_id='run_influx_loader',
             python_callable=run_influx_loader,
             provide_context=True,
+            trigger_rule='all_done',
         )
         run_duck_loader_trusted_task = PythonOperator(
             task_id='run_duck_loader_trusted',
             python_callable=run_duck_loader_trusted,
             provide_context=True,
+            trigger_rule='all_done',
         )
 
-    with TaskGroup("load_data_explotation") as load_data:
+    with TaskGroup("load_data_explotation") as load_data_exploitation:
         run_duck_loader_trusted_task = PythonOperator(
             task_id='run_duck_loader_explotation',
             python_callable=run_duck_loader_explotation,
             provide_context=True,
+            trigger_rule='all_done',
         )
-    collect_data >> load_data
+    collect_data >> load_data >> load_data_exploitation
