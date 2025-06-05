@@ -5,7 +5,6 @@ import glob
 import os
 import logging
 import subprocess
-import time
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -39,7 +38,7 @@ def run():
     )
 
     # Load Twitch data from delta
-    base_path = "/data/delta/"  # Changed back to /data/delta/ since that's where the Spark worker mounts it
+    base_path = "/opt/airflow/data/delta/"
     pattern = os.path.join(base_path, "twitch_data_*")
     
     logger.info(f"Looking for twitch data folders in {base_path}")
