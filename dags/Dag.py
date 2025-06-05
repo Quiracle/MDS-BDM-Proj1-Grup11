@@ -3,7 +3,6 @@ from airflow.operators.python import PythonOperator
 from airflow.utils.task_group import TaskGroup
 from datetime import datetime, timedelta
 
-from Twitch.TwitchDataLoader import fetch_and_store_twitch_data
 from Steam.SteamDataLoader import fetch_and_store_steam_data
 from Youtube.YoutubeDataLoader import fetch_and_store_youtube_data
 from MongoLoader.mongo_loader import run as mongo_loader 
@@ -16,9 +15,6 @@ def run_steam_data_loader(**kwargs):
 
 def run_youtube_data_loader(**kwargs):
     fetch_and_store_youtube_data()
-
-def run_twitch_data_loader(**kwargs):
-    fetch_and_store_twitch_data()
 
 def run_mongo_loader(**kwargs):
     mongo_loader()
@@ -44,7 +40,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='twitch_data_loader_dag',
+    dag_id='all_data_loader_dag',
     default_args=default_args,
     description='DAG to execute all workflows',
     schedule_interval='@daily',
@@ -62,12 +58,6 @@ with DAG(
         run_youtube_loader = PythonOperator(
             task_id='run_youtube_data_loader',
             python_callable=run_youtube_data_loader,
-            provide_context=True,
-            trigger_rule='all_done',
-        )
-        run_twitch_loader = PythonOperator(
-            task_id='run_twitch_data_loader',
-            python_callable=run_twitch_data_loader,
             provide_context=True,
             trigger_rule='all_done',
         )
