@@ -3,6 +3,8 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 from pyspark.sql import SparkSession
 import glob
 import os
+import logging
+import subprocess
 
 def run():
     # Influx config
@@ -28,9 +30,8 @@ def run():
     # Load Twitch data from delta
     base_path = "/opt/airflow/data/delta/"
     pattern = os.path.join(base_path, "twitch_data_*")
-    folders = sorted(glob.glob(pattern))
 
-    print(f"Found {len(folders)} twitch_data folders")
+    folders = sorted(glob.glob(pattern))
 
     # Load only valid ones
     dfs = []
@@ -40,20 +41,18 @@ def run():
             print(f"Skipping {folder} because _delta_log does not exist")
             continue
         try:
+            # Try to read the folder with Spark
             twitch_df = spark.read.format("delta").load(folder)
             dfs.append(twitch_df)
         except Exception as e:
             print(f"Skipping {folder} due to error: {e}")
+    if not dfs:
+        print(f"Skipping {folder} due to error: {e}")
 
     # Write to InfluxDB
-    for idx, df in enumerate(dfs):
-        print(f"Collecting DataFrame {idx+1}/{len(dfs)}", flush=True)
-        try:
-            rows = df.collect()
-            print(f"Collected {len(rows)} rows from DataFrame {idx+1}", flush=True)
-        except Exception as e:
-            print(f"Error collecting DataFrame {idx+1}: {e}", flush=True)
-            continue
+    # Write to InfluxDB
+    for df in dfs:
+        rows = df.collect()
         points = []
         for row in rows:
             point = (
@@ -64,9 +63,7 @@ def run():
             )
             points.append(point)
 
-            # ✅ batch write once per DataFrame
         write_api.write(bucket=bucket, org=org, record=points)
-
     print("Twitch viewers inserted into InfluxDB (trusted zone)")
 
 if __name__ == "__main__":

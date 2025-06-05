@@ -3,8 +3,8 @@
 import logging
 import time
 from dotenv import load_dotenv
-from .TwitchAPI import get_access_token, get_all_streams, aggregate_viewers_by_game, get_game_names
-from .DeltaWriter import DeltaWriter
+from Twitch.TwitchAPI import get_access_token, get_all_streams, aggregate_viewers_by_game, get_game_names
+from Twitch.DeltaWriter import DeltaWriter
 import os
 
 # Load environment variables
