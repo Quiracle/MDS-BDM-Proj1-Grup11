@@ -18,7 +18,7 @@ def run():
     spark = (
         SparkSession.builder
         .appName("InfluxLoader")
-        .master("spark://spark-master:7077")
+        # .master("spark://spark-master:7077")
         .config("spark.jars.packages", "io.delta:delta-core_2.12:2.4.0")
         .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
         .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
@@ -35,6 +35,10 @@ def run():
     # Load only valid ones
     dfs = []
     for folder in folders:
+        delta_log_path = os.path.join(folder, "_delta_log")
+        if not os.path.exists(delta_log_path):
+            print(f"Skipping {folder} because _delta_log does not exist")
+            continue
         try:
             twitch_df = spark.read.format("delta").load(folder)
             dfs.append(twitch_df)
@@ -42,8 +46,14 @@ def run():
             print(f"Skipping {folder} due to error: {e}")
 
     # Write to InfluxDB
-    for df in dfs:
-        rows = df.collect()
+    for idx, df in enumerate(dfs):
+        print(f"Collecting DataFrame {idx+1}/{len(dfs)}", flush=True)
+        try:
+            rows = df.collect()
+            print(f"Collected {len(rows)} rows from DataFrame {idx+1}", flush=True)
+        except Exception as e:
+            print(f"Error collecting DataFrame {idx+1}: {e}", flush=True)
+            continue
         points = []
         for row in rows:
             point = (
