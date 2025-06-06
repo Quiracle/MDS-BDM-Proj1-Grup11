@@ -63,12 +63,12 @@ with DAG(
         )
 
     with TaskGroup("load_data_trusted") as load_data:
-        run_mongo_loader_task = PythonOperator(
-            task_id='run_mongo_loader',
-            python_callable=run_mongo_loader,
-            provide_context=True,
-            trigger_rule='all_done',
-        )
+        #run_mongo_loader_task = PythonOperator(
+        #    task_id='run_mongo_loader',
+        #    python_callable=run_mongo_loader,
+        #    provide_context=True,
+        #    trigger_rule='all_done',
+        #)
         run_influx_loader_task = PythonOperator(
             task_id='run_influx_loader',
             python_callable=run_influx_loader,

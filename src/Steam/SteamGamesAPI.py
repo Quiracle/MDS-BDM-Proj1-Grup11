@@ -3,25 +3,74 @@ import requests
 import time
 import logging
 import json
+import os
 
 
+def fetch_steam_game_data_json(json_path="src/Steam/games_data.json"):
+    """
+    Loads Steam game data from a local JSON file and standardizes keys and types
+    to match the expected schema of the DeltaWriter.
+    """
+    logging.info(f"Loading Steam game data from local JSON file: {json_path}")
 
-def fetch_steam_game_data_json(json_path="games_data.json"):
-    logging.info("Loading Steam game data from local JSON file...")
-
+    # Ensure the path is correct for the execution environment
+    absolute_json_path = os.path.abspath(json_path) 
+    
     try:
-        with open(json_path, "r", encoding="utf-8") as f:
-            all_games = json.load(f)
-            logging.info(f"Loaded {len(all_games)} records from JSON.")
-            return all_games
+        with open(absolute_json_path, "r", encoding="utf-8") as f:
+            raw_games = json.load(f)
+            logging.info(f"Loaded {len(raw_games)} raw records from JSON.")
+            
+            processed_games = []
+            current_timestamp = time.time() # Use a single timestamp for this batch
+            
+            for game in raw_games:
+                # --- START OF MINIMAL CHANGES ---
+                # Standardize keys from JSON (e.g., "Name" to "name")
+                # and handle specific type conversions (e.g., platforms booleans to strings).
+                processed_game = {
+                    "appid": game.get("AppID"),
+                    "name": game.get("Name"), # Renamed from 'Name' to 'name'
+                    "type": game.get("Type"),
+                    "developers": game.get("Developers", []),
+                    "publishers": game.get("Publishers", []),
+                    "release_date": game.get("Release Date"), # Renamed from 'Release Date'
+                    "supported_languages": game.get("Supported Languages"), # Renamed from 'Supported Languages'
+                    "categories": game.get("Categories", []),
+                    "genres": game.get("Genres", []),
+                    # Convert boolean platform values to strings to match MapType(StringType(), StringType())
+                    "platforms": {k: str(v) for k, v in game.get("Platforms", {}).items()},
+                    "price": game.get("Price", "Free"), # Renamed from 'Price'
+                    "tags": game.get("Tags", []), # Renamed from 'Tags'
+                    "current_player_count": game.get("Current Player Count"), # Renamed from 'Current Player Count'
+                    "timestamp": current_timestamp # Added timestamp as expected by the Delta schema
+                }
+                
+                # Add an immediate check for null/empty name to filter out bad records early
+                if not processed_game.get("name") or str(processed_game["name"]).strip() == "":
+                    logging.warning(f"Skipping game with AppID {processed_game.get('appid')} due to null or empty 'name' after JSON load and key standardization.")
+                    continue # Skip this record if name is invalid
+
+                processed_games.append(processed_game)
+                # --- END OF MINIMAL CHANGES ---
+            
+            logging.info(f"Processed {len(processed_games)} records for Delta Lake after key standardization and initial name check.")
+            return processed_games
+            
+    except FileNotFoundError:
+        logging.error(f"JSON file not found at {absolute_json_path}. Please check the path and ensure it's accessible from the Airflow worker.")
+        return []
+    except json.JSONDecodeError as e:
+        logging.error(f"Error decoding JSON from {absolute_json_path}: {e}. Ensure the JSON is well-formed.")
+        return []
     except Exception as e:
-        logging.error(f"Failed to read {json_path}: {e}")
+        logging.error(f"An unexpected error occurred while reading or processing {absolute_json_path}: {e}")
         return []
     
 
 
 
-def fetch_steam_game_data(csv_path="steam_games.csv"):
+def fetch_steam_game_data(csv_path="src/Steam/steam_games.csv"):
     logging.info("Loading Steam games from CSV...")
     try:
         df = pd.read_csv(csv_path, sep=";")

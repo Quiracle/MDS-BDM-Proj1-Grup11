@@ -199,8 +199,8 @@ services:
 
   airflow-webserver:
     build:
-      context: ./airflow         # 👈 Path to Dockerfile directory
-      dockerfile: Dockerfile     # 👈 Optional, defaults to 'Dockerfile'
+      context: ./airflow         
+      dockerfile: Dockerfile     
     image: custom-airflow:latest
     depends_on:
       - postgres
@@ -223,8 +223,8 @@ services:
 
   airflow-scheduler:
     build:
-      context: ./airflow         # 👈 Path to Dockerfile directory
-      dockerfile: Dockerfile     # 👈 Optional, defaults to 'Dockerfile'
+      context: ./airflow         
+      dockerfile: Dockerfile     
     image: custom-airflow:latest
     depends_on:
       - postgres

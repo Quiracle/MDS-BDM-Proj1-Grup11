@@ -1,4 +1,5 @@
 import logging
+import os
 #from dotenv import load_dotenv
 from .SteamGamesAPI import fetch_steam_game_data , fetch_steam_game_data_json
 from .SteamUsersAPI import fetch_steam_user_data , fetch_steam_user_data_json

@@ -7,7 +7,7 @@ from pyspark.sql.types import (
 from datetime import datetime
 
 class DeltaWriter:
-    def __init__(self, delta_path="file:///data/delta/Steam_games_data", master="local[*]"):
+    def __init__(self, delta_path="/opt/airflow/data/delta/Steam_games_data", master="local[*]"):
         self.base_delta_path = delta_path
         self.spark = self._create_spark_session(master)
         self.schema = StructType([

@@ -17,7 +17,7 @@ OWNED_GAMES_URL = "https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/
 
 
 
-def fetch_steam_user_data_json(json_path="steam_users.json"):
+def fetch_steam_user_data_json(json_path="src/Steam/steam_users.json"):
     logging.info(f" Loading Steam user data from JSON file: {json_path}")
     
     try:
@@ -60,6 +60,7 @@ def get_owned_games(steam_id):
 
 # Option 1: Load from a list of IDs in a CSV and fetch via API
 def fetch_steam_user_data(csv_path="steam_users.csv", delay=0.1):
+
     logging.info(f" Loading Steam IDs from CSV: {csv_path}")
 
     try:
