@@ -17,7 +17,7 @@ def run():
         .getOrCreate()
 
     # Find all matching Delta folders
-    base_path = "/data/delta"
+    base_path = "/opt/airflow/data/delta"
     pattern = os.path.join(base_path, "proton_data_*")
     folders = sorted(glob.glob(pattern))
 

@@ -32,8 +32,7 @@ services:
       ME_CONFIG_BASICAUTH: false
     depends_on:
       - mongo-trusted
-    networks:
-      - default
+
 
   mongo-express-exploitation:
     image: mongo-express
@@ -50,8 +49,6 @@ services:
       ME_CONFIG_BASICAUTH: false
     depends_on:
       - mongo-exploitation
-    networks:
-      - default
 
   mongo-proton:
     image: mongo:latest
@@ -137,19 +134,17 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./data/trusted_zone/mongodb:/data/db
-    networks:
-      - default
 
-  proton-trusted-loader:
-    build:
-      context: ./src/MongoLoader
-      dockerfile: Dockerfile.proton.trusted
-    container_name: proton_trusted_loader
-    volumes:
-      - ./data:/data
-    depends_on:
-      - mongo-trusted
-      - spark-master
+  # proton-trusted-loader:
+  #   build:
+  #     context: ./src/MongoLoader
+  #     dockerfile: Dockerfile.proton.trusted
+  #   container_name: proton_trusted_loader
+  #   volumes:
+  #     - ./data:/data
+  #   depends_on:
+  #     - mongo-trusted
+  #     - spark-master
 
   influx-trusted:
     image: influxdb:2.7
@@ -162,7 +157,7 @@ services:
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=admin
-      - DOCKER_INFLUXDB_INIT_PASSWORD=admin123
+      - DOCKER_INFLUXDB_INIT_PASSWORD=password
       - DOCKER_INFLUXDB_INIT_ORG=steamorg
       - DOCKER_INFLUXDB_INIT_BUCKET=steammetrics
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=admintoken
@@ -248,6 +243,8 @@ services:
     container_name: streamlit_dashboard
     ports:
       - "8501:8501"
+    volumes:
+      - ./data:/data
     restart: always
 
   mongo-exploitation:
@@ -260,8 +257,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./data/exploitation_zone/mongodb:/data/db
-    networks:
-      - default
+
 
   # proton-exploitation-loader:
   #   build:

@@ -5,7 +5,9 @@ from datetime import datetime, timedelta
 
 from Steam.SteamDataLoader import fetch_and_store_steam_data
 from Youtube.YoutubeDataLoader import fetch_and_store_youtube_data
-from MongoLoader.mongo_loader import run as mongo_loader 
+from Protondb.ProtondbAPI import run as fetch_and_store_proton_data
+from MongoLoader.proton_trusted_loader import run as mongo_trusted_loader 
+from MongoLoader.proton_exploitation_loader import run as mongo_exploitation_loader
 from InfluxLoader.influx_loader import run as influx_loader
 from DuckLoader.duckdb_loader_to_trusted import run as duck_loader_trusted
 from DuckLoader.duckdb_loader_to_explotation import run as duck_loader_explotation
@@ -16,8 +18,14 @@ def run_steam_data_loader(**kwargs):
 def run_youtube_data_loader(**kwargs):
     fetch_and_store_youtube_data()
 
+def run_proton_data_loader(**kwargs):
+    fetch_and_store_proton_data()
+
 def run_mongo_loader(**kwargs):
-    mongo_loader()
+    mongo_trusted_loader()
+
+def run_mongo_exploitation_loader(**kwargs):
+    mongo_exploitation_loader()
 
 def run_influx_loader(**kwargs):
     influx_loader()
@@ -36,7 +44,7 @@ default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    'retry_delay': timedelta(minutes=1),
 }
 
 with DAG(
@@ -61,14 +69,20 @@ with DAG(
             provide_context=True,
             trigger_rule='all_done',
         )
+        run_proton_loader = PythonOperator(
+            task_id='run_proton_data_loader',
+            python_callable=run_proton_data_loader,
+            provide_context=True,
+            trigger_rule='all_done',
+        )
 
     with TaskGroup("load_data_trusted") as load_data:
-        #run_mongo_loader_task = PythonOperator(
-        #    task_id='run_mongo_loader',
-        #    python_callable=run_mongo_loader,
-        #    provide_context=True,
-        #    trigger_rule='all_done',
-        #)
+        run_mongo_loader_task = PythonOperator(
+           task_id='run_mongo_loader',
+           python_callable=run_mongo_loader,
+           provide_context=True,
+           trigger_rule='all_done',
+        )
         run_influx_loader_task = PythonOperator(
             task_id='run_influx_loader',
             python_callable=run_influx_loader,
@@ -89,4 +103,11 @@ with DAG(
             provide_context=True,
             trigger_rule='all_done',
         )
+        run_mongo_exploitation_loader_task = PythonOperator(
+            task_id='run_mongo_exploitation_loader',
+            python_callable=run_mongo_exploitation_loader,
+            provide_context=True,
+            trigger_rule='all_done',
+        )
+
     collect_data >> load_data >> load_data_exploitation

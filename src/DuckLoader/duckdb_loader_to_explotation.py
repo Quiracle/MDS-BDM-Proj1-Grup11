@@ -390,7 +390,7 @@ def run():
     finally:
         trusted_con.close()
         exploit_con.close()
-        spark.stop()
+        # spark.stop()
         print("\n--- KPI generation and storage process completed. ---")
 
 if __name__ == "__main__":

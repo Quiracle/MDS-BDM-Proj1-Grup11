@@ -17,7 +17,7 @@ def fetch_and_store_youtube_data():
 
     # Define path to the local youtube_views.json
     script_dir = os.path.dirname(__file__)
-    json_path = os.path.join(script_dir, 'src/Youtube/youtube_views.json')
+    json_path = os.path.join(script_dir, 'youtube_views.json')
 
     try:
         with open(json_path, 'r', encoding='utf-8') as f:

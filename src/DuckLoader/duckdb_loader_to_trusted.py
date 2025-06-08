@@ -622,7 +622,7 @@ def run():
         if con:
             con.close()
             print("DuckDB connection closed.")
-        spark.stop()
+        # spark.stop()
         print("\n--- Data loading and cleaning process completed ---")
 
 if __name__ == "__main__":
