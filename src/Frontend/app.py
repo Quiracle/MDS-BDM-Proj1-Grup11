@@ -412,8 +412,8 @@ with tab3:
                                 # Filter out rows where GameName is NaN (games not found in df_game_metrics)
                                 final_collaborative_recs = final_collaborative_recs.dropna(subset=['GameName']).copy()
 
-                                # Format Price for display
-                                final_collaborative_recs['Price'] = final_collaborative_recs['Price'].apply(lambda x: f"${x:.2f}" if pd.notna(x) else 'N/A')
+
+
                                 
                                 # Define display columns for simple output
                                 display_cols_simple = ['GameName', 'Price']
@@ -453,8 +453,6 @@ with tab3:
                     # Filter out rows where GameName is NaN
                     content_based_df = content_based_df.dropna(subset=['GameName']).copy()
 
-                    # Format Price for display
-                    content_based_df['Price'] = content_based_df['Price'].apply(lambda x: f"${x:.2f}" if pd.notna(x) else 'N/A')
 
                     # Define display columns for simple output
                     display_cols_simple = ['GameName', 'Price']
