@@ -33,13 +33,13 @@ def run():
         .getOrCreate()
     print("Spark Session initialized.")
 
-    # Connect to source (trusted) and target (exploitation) DuckDBs
+    # Connect to source (trusted) and target (exploitation) DuckDB databases
     trusted_con = duckdb.connect(database=trusted_db_path, read_only=True)
     exploit_con = duckdb.connect(database=exploitation_db_path, read_only=False)
     print(f"Connected to trusted DuckDB at {trusted_db_path}")
     print(f"Connected to exploitation DuckDB at {exploitation_db_path}")
 
-    # --- Displaying HEAD of tables in Trusted DuckDB (as requested) ---
+    # --- Displaying HEAD of tables in Trusted DuckDB ---
     print("\n--- Displaying HEAD of tables in Trusted DuckDB ---")
     try:
         tables = trusted_con.execute("SHOW TABLES").fetchdf()['name'].tolist()
@@ -58,7 +58,6 @@ def run():
     except Exception as e:
         print(f"Error listing tables in trusted DuckDB: {e}")
     print("--------------------------------------------------")
-    # --- END OF TRUSTED DB TABLE HEADS SECTION ---
 
 
     # --- Define Schemas explicitly for createDataFrame ---
@@ -205,7 +204,7 @@ def run():
             pandas_games_df['current_player_count'] = pd.to_numeric(
                 pandas_games_df['current_player_count'], errors='coerce'
             ).fillna(0).astype(np.int64) # Use np.int64 for LongType compatibility
-            print(f"   Converted 'current_player_count' to integer type in Pandas DataFrame.")
+            print(f"Converted 'current_player_count' to integer type in Pandas DataFrame.")
         # --- END FIX ---
         
         df_games = spark.createDataFrame(pandas_games_df, schema=games_spark_schema)
@@ -221,14 +220,16 @@ def run():
         print(f"Loaded {df_users.count()} users, {df_games.count()} games, {df_twitch.count()} twitch records.")
 
         # --- Pre-calculate total playtime per user (needed for country metrics and user KPIs) ---
+        # Convert total playtime from minutes to hours here
         df_users_with_playtime = df_users.withColumn(
             "TotalPlaytime",
-            when(col("Owned_Game_PlayedHours").isNotNull() & (expr("size(Owned_Game_PlayedHours)") > 0),
-                 # FIXED: Explicitly cast the initial value in aggregate to DOUBLE
-                 expr("aggregate(Owned_Game_PlayedHours, CAST(0.0 AS DOUBLE), (acc, x) -> acc + x)").cast(DoubleType()))
-            .otherwise(0.0)
+            round(
+                when(col("Owned_Game_PlayedHours").isNotNull() & (expr("size(Owned_Game_PlayedHours)") > 0),
+                     expr("aggregate(Owned_Game_PlayedHours, CAST(0.0 AS DOUBLE), (acc, x) -> acc + x)") / 60.0
+                ).otherwise(0.0),
+            2).cast(DoubleType()) # Round to 2 decimal places and cast to DoubleType
         )
-        print("Calculated 'TotalPlaytime' for each user.")
+        print("Calculated 'TotalPlaytime' (in hours) for each user.")
         
         # --- KPI Group 1: Game-related KPIs (`game_metrics`) ---
         print("\nCalculating Game-related KPIs...")
@@ -236,16 +237,15 @@ def run():
         twitch_game_summary = df_twitch.groupBy("game_name") \
                                        .agg(sum("viewers").alias("TotalTwitchViewers"))
 
-        # --- FIX STARTS HERE ---
         df_user_game_playtime = df_users.select("SteamID", arrays_zip("Owned_Game_AppIDs", "Owned_Game_PlayedHours").alias("game_details")) \
-                                         .withColumn("game_detail", explode(col("game_details"))) \
-                                         .select(
-                                             col("SteamID"),
-                                             # Corrected field access
-                                             col("game_detail.Owned_Game_AppIDs").alias("appid"),
-                                             col("game_detail.Owned_Game_PlayedHours").alias("played_hours")
-                                         ).filter(col("appid").isNotNull() & col("played_hours").isNotNull())
-        # --- FIX ENDS HERE ---
+                                           .withColumn("game_detail", explode(col("game_details"))) \
+                                           .select(
+                                               col("SteamID"),
+                                               # Corrected field access
+                                               col("game_detail.Owned_Game_AppIDs").alias("appid"),
+                                               # Ensure played_hours from source is also in minutes, convert to hours here
+                                               round(col("game_detail.Owned_Game_PlayedHours") / 60.0, 2).alias("played_hours")
+                                           ).filter(col("appid").isNotNull() & col("played_hours").isNotNull())
 
         game_playtime_summary = df_user_game_playtime.groupBy("appid") \
                                                      .agg(
@@ -278,7 +278,7 @@ def run():
         print("\nCalculating Country-related KPIs...")
 
         kpi_user_count_by_country = df_users.groupBy("Country") \
-                                             .agg(spark_count(col("SteamID")).alias("UserCount")) # Use spark_count
+                                            .agg(spark_count(col("SteamID")).alias("UserCount")) # Use spark_count
 
         kpi_avg_steam_level_by_country = df_users.groupBy("Country") \
                                                  .agg(round(avg("Steam_Level"), 2).alias("AverageSteamLevel"),
@@ -286,8 +286,8 @@ def run():
                                                       max("Steam_Level").alias("MaxSteamLevel"))
 
         kpi_avg_playtime_by_country = df_users_with_playtime.groupBy("Country") \
-                                                             .agg(round(avg("TotalPlaytime"), 2).alias("AverageTotalPlaytime"),
-                                                                  spark_count(when(col("TotalPlaytime") > 1000, True)).alias("HighPlaytimeUserCount")) # Use spark_count
+                                                            .agg(round(avg("TotalPlaytime"), 2).alias("AverageTotalPlaytime"),
+                                                                 spark_count(when(col("TotalPlaytime") > 1000, True)).alias("HighPlaytimeUserCount")) # Use spark_count
 
         kpi_avg_owned_games_by_country = df_users.groupBy("Country") \
                                                  .agg(round(avg("Owned_Games_Count"), 2).alias("AverageOwnedGamesPerUser"))
@@ -321,18 +321,25 @@ def run():
         # --- KPI Group 3: User-specific KPIs (`user_kpis`) ---
         print("\nCalculating User-specific KPIs...")
 
-        df_user_owned_game_names = df_users.select("SteamID", explode(
-            when(col("Owned_Game_AppIDs").isNotNull(), col("Owned_Game_AppIDs")).otherwise(lit(None))
-        ).alias("appid")) \
-                                           .join(df_games.select("appid", "name"), "appid", "left_outer") \
-                                           .groupBy("SteamID") \
-                                           .agg(collect_list(when(col("name").isNotNull(), col("name"))).alias("ListOfOwnedGames")) \
+        # FIX for ListOfOwnedGames: Collect appid instead of name
+        df_user_owned_game_names = df_users.select(
+            col("SteamID").alias("UserID"), # Alias SteamID to UserID here to match df_user_kpis
+            explode(
+                when(col("Owned_Game_AppIDs").isNotNull(), col("Owned_Game_AppIDs")).otherwise(lit(None))
+            ).alias("appid")) \
+                                           .groupBy("UserID") \
+                                           .agg(collect_list(when(col("appid").isNotNull(), col("appid"))).alias("ListOfOwnedGames")) \
                                            .withColumn("ListOfOwnedGames",
                                                        when(col("ListOfOwnedGames").isNull(), lit([])).otherwise(col("ListOfOwnedGames")))
 
+        print("\n--- Diagnostic: Schema of df_user_owned_game_names (before joining) ---")
+        df_user_owned_game_names.printSchema()
+        print("--- Diagnostic: Sample of df_user_owned_game_names (before joining) ---")
+        df_user_owned_game_names.show(5, truncate=False)
+
 
         df_user_kpis = df_users_with_playtime.select(
-            col("SteamID"),
+            col("SteamID").alias("UserID"), # Renamed for consistency with Streamlit app
             col("Username"),
             col("Country"),
             col("Steam_Level"),
@@ -340,94 +347,41 @@ def run():
             col("TotalPlaytime"),
             when(col("Owned_Games_Count") > 0, round(col("TotalPlaytime") / col("Owned_Games_Count"), 2)).otherwise(0.0).alias("AvgPlaytimePerOwnedGame"),
             when(col("TotalPlaytime") > 1000, True).otherwise(False).alias("HasHighPlaytime")
-        ).join(df_user_owned_game_names, "SteamID", "left_outer") \
+        ).join(df_user_owned_game_names, "UserID", "left_outer") \
         .orderBy(col("TotalPlaytime").desc(), col("Owned_Games_Count").desc())
 
-        print("KPIs for `user_kpis` calculated.")
-        df_user_kpis.show(5, truncate=False) # Display all columns
-
-        # --- KPI Group 4: Overall Summary KPIs (`overall_summary_kpis`) ---
-        print("\nCalculating Overall Summary KPIs...")
-
-        kpi_total_users = df_users.count()
-        kpi_total_games = df_games.count()
-        kpi_total_twitch_records = df_twitch.count()
-        kpi_overall_avg_steam_level = df_users.agg(round(avg("Steam_Level"), 2).alias("AvgSteamLevel")).collect()[0]["AvgSteamLevel"]
-        kpi_overall_avg_current_players = df_games.agg(round(avg("current_player_count"), 2).alias("AvgCurrentPlayers")).collect()[0]["AvgCurrentPlayers"]
-        kpi_most_expensive_game_price = df_games.agg(max("price").alias("MaxPrice")).collect()[0]["MaxPrice"]
+        # Apply a cap to TotalPlaytime to prevent extremely high values, e.g., 1,000,000 hours
+        # This will convert any playtime above 100,000 hours to 100,000, which is still very high but prevents millions.
+        # You can adjust this threshold as needed based on your data's realistic maximums.
+        df_user_kpis = df_user_kpis.withColumn(
+            "TotalPlaytime",
+            when(col("TotalPlaytime") > 100000, lit(100000.0)).otherwise(col("TotalPlaytime")) # Ensure it's DoubleType
+        )
+        print("User metrics calculated and TotalPlaytime capped.")
         
-        kpi_oldest_game_release_date_row = df_games.agg(min("release_date").alias("MinDate")).collect()[0]
-        kpi_oldest_game_release_date = kpi_oldest_game_release_date_row["MinDate"].isoformat() if kpi_oldest_game_release_date_row["MinDate"] else None
+        # --- Diagnostic: Inspect ListOfOwnedGames in df_user_kpis (before saving) ---
+        print("\n--- Diagnostic: Schema of df_user_kpis (before saving) ---")
+        df_user_kpis.printSchema()
+        print("--- Diagnostic: Sample of ListOfOwnedGames in df_user_kpis (before saving) ---")
+        df_user_kpis.select("UserID", "ListOfOwnedGames").show(5, truncate=False) # Show 5 rows, no truncation
+        print("-----------------------------------------------------------\n")
 
-        kpi_newest_game_release_date_row = df_games.agg(max("release_date").alias("MaxDate")).collect()[0]
-        kpi_newest_game_release_date = kpi_newest_game_release_date_row["MaxDate"].isoformat() if kpi_newest_game_release_date_row["MaxDate"] else None
-
-        top_game_row = df_games.orderBy(col("current_player_count").desc()).select("name", "current_player_count").limit(1).collect()
-        top_game_name = top_game_row[0]["name"] if top_game_row else None
-        top_game_players = top_game_row[0]["current_player_count"] if top_game_row else None
-
-        game_with_most_owners_row = game_playtime_summary.orderBy(col("NumberOfOwners").desc()).limit(1).select("appid", "NumberOfOwners").collect()
-        game_with_most_owners_appid = game_with_most_owners_row[0]["appid"] if game_with_most_owners_row else None
-        game_with_most_owners_count = game_with_most_owners_row[0]["NumberOfOwners"] if game_with_most_owners_row else None
-
-        game_with_most_owners_name = None
-        if game_with_most_owners_appid:
-            game_name_row = df_games.filter(col("appid") == game_with_most_owners_appid).select("name").limit(1).collect()
-            game_with_most_owners_name = game_name_row[0]["name"] if game_name_row else "Unknown Game"
-
-        game_with_most_played_hours_row = game_playtime_summary.orderBy(col("TotalPlayedHoursByUsers").desc()).limit(1).select("appid", "TotalPlayedHoursByUsers").collect()
-        game_with_most_played_hours_appid = game_with_most_played_hours_row[0]["appid"] if game_with_most_played_hours_row else None
-        game_with_most_played_hours_total = game_with_most_played_hours_row[0]["TotalPlayedHoursByUsers"] if game_with_most_played_hours_row else None
-
-        game_with_most_played_hours_name = None
-        if game_with_most_played_hours_appid:
-            game_name_row = df_games.filter(col("appid") == game_with_most_played_hours_appid).select("name").limit(1).collect()
-            game_with_most_played_hours_name = game_name_row[0]["name"] if game_name_row else "Unknown Game"
-
-
-        overall_summary_data = {
-            "TotalUsers": kpi_total_users,
-            "TotalGames": kpi_total_games,
-            "TotalTwitchRecords": kpi_total_twitch_records,
-            "OverallAverageSteamLevel": kpi_overall_avg_steam_level,
-            "OverallAverageCurrentPlayersPerGame": kpi_overall_avg_current_players,
-            "MostExpensiveGamePrice": kpi_most_expensive_game_price,
-            "OldestGameReleaseDate": kpi_oldest_game_release_date,
-            "NewestGameReleaseDate": kpi_newest_game_release_date,
-            "TopCurrentPlayersGameName": top_game_name,
-            "TopCurrentPlayersCount": top_game_players,
-            "GameWithMostOwnersName": game_with_most_owners_name,
-            "GameWithMostOwnersCount": game_with_most_owners_count,
-            "GameWithMostPlayedHoursName": game_with_most_played_hours_name,
-            "GameWithMostPlayedHoursTotal": game_with_most_played_hours_total
-        }
-        df_overall_summary_kpis = spark.createDataFrame([overall_summary_data])
-        print("KPIs for `overall_summary_kpis` calculated.")
-        df_overall_summary_kpis.show(truncate=False) # Display all columns
-
-
-        # --- Store KPIs in Exploitation DuckDB ---
-        print("\nStoring calculated KPIs in Exploitation DuckDB...")
+        # --- Store KPIs in Exploitation Zone (DuckDB) ---
 
         exploit_con.execute("DROP TABLE IF EXISTS game_metrics")
         exploit_con.register("spark_df_game_metrics", df_game_metrics.toPandas())
         exploit_con.execute("CREATE TABLE game_metrics AS SELECT * FROM spark_df_game_metrics")
-        print("   Table `game_metrics` stored.")
+        print("Table `game_metrics` stored.")
 
         exploit_con.execute("DROP TABLE IF EXISTS country_metrics")
         exploit_con.register("spark_df_country_metrics", df_country_metrics.toPandas())
         exploit_con.execute("CREATE TABLE country_metrics AS SELECT * FROM spark_df_country_metrics")
-        print("   Table `country_metrics` stored.")
+        print("Table `country_metrics` stored.")
 
         exploit_con.execute("DROP TABLE IF EXISTS user_metrics")
         exploit_con.register("spark_df_user_kpis", df_user_kpis.toPandas())
         exploit_con.execute("CREATE TABLE user_metrics AS SELECT * FROM spark_df_user_kpis")
-        print("   Table `user_metrics` stored.")
-        
-        exploit_con.execute("DROP TABLE IF EXISTS overall_summary_kpis")
-        exploit_con.register("spark_df_overall_summary_kpis", df_overall_summary_kpis.toPandas())
-        exploit_con.execute("CREATE TABLE overall_summary_kpis AS SELECT * FROM spark_df_overall_summary_kpis")
-        print("   Table `overall_summary_kpis` stored.")
+        print("Table `user_metrics` stored.")
 
     except Exception as e:
         print(f"An error occurred during KPI calculation or storage: {e}")
